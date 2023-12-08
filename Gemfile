@@ -1,7 +1,16 @@
 source 'https://rubygems.org'
 
+# GraphQL Client (https://github.com/github/graphql-client)
+gem 'graphql-client'
+
+# A GraphQL language and runtime for Ruby (https://github.com/rmosolgo/graphql-ruby)
+gem 'graphql', '< 2.1'
+
 # Loads environment variables from `.env`. (https://github.com/bkeepers/dotenv)
 gem 'dotenv'
+
+# Ruby library for InfluxDB 2. (https://github.com/influxdata/influxdb-client-ruby)
+gem 'influxdb-client'
 
 group :development, :test do
   # Rake is a Make-like program implemented in Ruby (https://github.com/ruby/rake)

@@ -1,0 +1,207 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.tibber.com/v1-beta/gql
+    body:
+      encoding: UTF-8
+      string: '{"query":"query Tibber__PRICE_INFO_QUERY {\n  viewer {\n    homes {\n      currentSubscription
+        {\n        priceInfo {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
+        {\n            total\n            startsAt\n            level\n          }\n        }\n      }\n    }\n  }\n}","operationName":"Tibber__PRICE_INFO_QUERY"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - SOLECTRUS/Tibber-Collector
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <TIBBER_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Dec 2023 09:15:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"787-7CQV+oOU9/u9hLuMxpHcm+PMN50"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":1.3486,"startsAt":"2023-12-08T00:00:00.000+01:00","level":"CHEAP"},{"total":1.2946,"startsAt":"2023-12-08T01:00:00.000+01:00","level":"CHEAP"},{"total":1.2689,"startsAt":"2023-12-08T02:00:00.000+01:00","level":"CHEAP"},{"total":1.242,"startsAt":"2023-12-08T03:00:00.000+01:00","level":"CHEAP"},{"total":1.2487,"startsAt":"2023-12-08T04:00:00.000+01:00","level":"CHEAP"},{"total":1.3479,"startsAt":"2023-12-08T05:00:00.000+01:00","level":"CHEAP"},{"total":1.4853,"startsAt":"2023-12-08T06:00:00.000+01:00","level":"CHEAP"},{"total":1.5893,"startsAt":"2023-12-08T07:00:00.000+01:00","level":"CHEAP"},{"total":1.7086,"startsAt":"2023-12-08T08:00:00.000+01:00","level":"CHEAP"},{"total":1.7912,"startsAt":"2023-12-08T09:00:00.000+01:00","level":"NORMAL"},{"total":1.7945,"startsAt":"2023-12-08T10:00:00.000+01:00","level":"NORMAL"},{"total":1.7734,"startsAt":"2023-12-08T11:00:00.000+01:00","level":"NORMAL"},{"total":1.765,"startsAt":"2023-12-08T12:00:00.000+01:00","level":"NORMAL"},{"total":1.6963,"startsAt":"2023-12-08T13:00:00.000+01:00","level":"NORMAL"},{"total":1.6656,"startsAt":"2023-12-08T14:00:00.000+01:00","level":"NORMAL"},{"total":1.737,"startsAt":"2023-12-08T15:00:00.000+01:00","level":"NORMAL"},{"total":1.6911,"startsAt":"2023-12-08T16:00:00.000+01:00","level":"NORMAL"},{"total":1.7324,"startsAt":"2023-12-08T17:00:00.000+01:00","level":"NORMAL"},{"total":1.7405,"startsAt":"2023-12-08T18:00:00.000+01:00","level":"NORMAL"},{"total":1.5634,"startsAt":"2023-12-08T19:00:00.000+01:00","level":"CHEAP"},{"total":1.4586,"startsAt":"2023-12-08T20:00:00.000+01:00","level":"CHEAP"},{"total":1.2831,"startsAt":"2023-12-08T21:00:00.000+01:00","level":"CHEAP"},{"total":1.1532,"startsAt":"2023-12-08T22:00:00.000+01:00","level":"CHEAP"},{"total":1.1077,"startsAt":"2023-12-08T23:00:00.000+01:00","level":"CHEAP"}],"tomorrow":[]}}}]}}}
+
+        '
+  recorded_at: Fri, 08 Dec 2023 09:15:34 GMT
+- request:
+    method: post
+    uri: http://<INFLUX_HOST>:8086/api/v2/write?bucket=<INFLUX_BUCKET>&org=<INFLUX_ORG>&precision=s
+    body:
+      encoding: UTF-8
+      string: |-
+        my-tibber amount=1.3486,level="CHEAP" 1701990000
+        my-tibber amount=1.2946,level="CHEAP" 1701993600
+        my-tibber amount=1.2689,level="CHEAP" 1701997200
+        my-tibber amount=1.242,level="CHEAP" 1702000800
+        my-tibber amount=1.2487,level="CHEAP" 1702004400
+        my-tibber amount=1.3479,level="CHEAP" 1702008000
+        my-tibber amount=1.4853,level="CHEAP" 1702011600
+        my-tibber amount=1.5893,level="CHEAP" 1702015200
+        my-tibber amount=1.7086,level="CHEAP" 1702018800
+        my-tibber amount=1.7912,level="NORMAL" 1702022400
+        my-tibber amount=1.7945,level="NORMAL" 1702026000
+        my-tibber amount=1.7734,level="NORMAL" 1702029600
+        my-tibber amount=1.765,level="NORMAL" 1702033200
+        my-tibber amount=1.6963,level="NORMAL" 1702036800
+        my-tibber amount=1.6656,level="NORMAL" 1702040400
+        my-tibber amount=1.737,level="NORMAL" 1702044000
+        my-tibber amount=1.6911,level="NORMAL" 1702047600
+        my-tibber amount=1.7324,level="NORMAL" 1702051200
+        my-tibber amount=1.7405,level="NORMAL" 1702054800
+        my-tibber amount=1.5634,level="CHEAP" 1702058400
+        my-tibber amount=1.4586,level="CHEAP" 1702062000
+        my-tibber amount=1.2831,level="CHEAP" 1702065600
+        my-tibber amount=1.1532,level="CHEAP" 1702069200
+        my-tibber amount=1.1077,level="CHEAP" 1702072800
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - influxdb-client-ruby/3.0.0
+      Authorization:
+      - Token <INFLUX_TOKEN>
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Influxdb-Build:
+      - OSS
+      X-Influxdb-Version:
+      - v2.7.4
+      Date:
+      - Fri, 08 Dec 2023 09:15:34 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 08 Dec 2023 09:15:34 GMT
+- request:
+    method: post
+    uri: https://api.tibber.com/v1-beta/gql
+    body:
+      encoding: UTF-8
+      string: '{"query":"query Tibber__PRICE_INFO_QUERY {\n  viewer {\n    homes {\n      currentSubscription
+        {\n        priceInfo {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
+        {\n            total\n            startsAt\n            level\n          }\n        }\n      }\n    }\n  }\n}","operationName":"Tibber__PRICE_INFO_QUERY"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - SOLECTRUS/Tibber-Collector
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer <TIBBER_TOKEN>
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 08 Dec 2023 09:15:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"787-7CQV+oOU9/u9hLuMxpHcm+PMN50"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":1.3486,"startsAt":"2023-12-08T00:00:00.000+01:00","level":"CHEAP"},{"total":1.2946,"startsAt":"2023-12-08T01:00:00.000+01:00","level":"CHEAP"},{"total":1.2689,"startsAt":"2023-12-08T02:00:00.000+01:00","level":"CHEAP"},{"total":1.242,"startsAt":"2023-12-08T03:00:00.000+01:00","level":"CHEAP"},{"total":1.2487,"startsAt":"2023-12-08T04:00:00.000+01:00","level":"CHEAP"},{"total":1.3479,"startsAt":"2023-12-08T05:00:00.000+01:00","level":"CHEAP"},{"total":1.4853,"startsAt":"2023-12-08T06:00:00.000+01:00","level":"CHEAP"},{"total":1.5893,"startsAt":"2023-12-08T07:00:00.000+01:00","level":"CHEAP"},{"total":1.7086,"startsAt":"2023-12-08T08:00:00.000+01:00","level":"CHEAP"},{"total":1.7912,"startsAt":"2023-12-08T09:00:00.000+01:00","level":"NORMAL"},{"total":1.7945,"startsAt":"2023-12-08T10:00:00.000+01:00","level":"NORMAL"},{"total":1.7734,"startsAt":"2023-12-08T11:00:00.000+01:00","level":"NORMAL"},{"total":1.765,"startsAt":"2023-12-08T12:00:00.000+01:00","level":"NORMAL"},{"total":1.6963,"startsAt":"2023-12-08T13:00:00.000+01:00","level":"NORMAL"},{"total":1.6656,"startsAt":"2023-12-08T14:00:00.000+01:00","level":"NORMAL"},{"total":1.737,"startsAt":"2023-12-08T15:00:00.000+01:00","level":"NORMAL"},{"total":1.6911,"startsAt":"2023-12-08T16:00:00.000+01:00","level":"NORMAL"},{"total":1.7324,"startsAt":"2023-12-08T17:00:00.000+01:00","level":"NORMAL"},{"total":1.7405,"startsAt":"2023-12-08T18:00:00.000+01:00","level":"NORMAL"},{"total":1.5634,"startsAt":"2023-12-08T19:00:00.000+01:00","level":"CHEAP"},{"total":1.4586,"startsAt":"2023-12-08T20:00:00.000+01:00","level":"CHEAP"},{"total":1.2831,"startsAt":"2023-12-08T21:00:00.000+01:00","level":"CHEAP"},{"total":1.1532,"startsAt":"2023-12-08T22:00:00.000+01:00","level":"CHEAP"},{"total":1.1077,"startsAt":"2023-12-08T23:00:00.000+01:00","level":"CHEAP"}],"tomorrow":[]}}}]}}}
+
+        '
+  recorded_at: Fri, 08 Dec 2023 09:15:35 GMT
+- request:
+    method: post
+    uri: http://<INFLUX_HOST>:8086/api/v2/write?bucket=<INFLUX_BUCKET>&org=<INFLUX_ORG>&precision=s
+    body:
+      encoding: UTF-8
+      string: |-
+        my-tibber amount=1.3486,level="CHEAP" 1701990000
+        my-tibber amount=1.2946,level="CHEAP" 1701993600
+        my-tibber amount=1.2689,level="CHEAP" 1701997200
+        my-tibber amount=1.242,level="CHEAP" 1702000800
+        my-tibber amount=1.2487,level="CHEAP" 1702004400
+        my-tibber amount=1.3479,level="CHEAP" 1702008000
+        my-tibber amount=1.4853,level="CHEAP" 1702011600
+        my-tibber amount=1.5893,level="CHEAP" 1702015200
+        my-tibber amount=1.7086,level="CHEAP" 1702018800
+        my-tibber amount=1.7912,level="NORMAL" 1702022400
+        my-tibber amount=1.7945,level="NORMAL" 1702026000
+        my-tibber amount=1.7734,level="NORMAL" 1702029600
+        my-tibber amount=1.765,level="NORMAL" 1702033200
+        my-tibber amount=1.6963,level="NORMAL" 1702036800
+        my-tibber amount=1.6656,level="NORMAL" 1702040400
+        my-tibber amount=1.737,level="NORMAL" 1702044000
+        my-tibber amount=1.6911,level="NORMAL" 1702047600
+        my-tibber amount=1.7324,level="NORMAL" 1702051200
+        my-tibber amount=1.7405,level="NORMAL" 1702054800
+        my-tibber amount=1.5634,level="CHEAP" 1702058400
+        my-tibber amount=1.4586,level="CHEAP" 1702062000
+        my-tibber amount=1.2831,level="CHEAP" 1702065600
+        my-tibber amount=1.1532,level="CHEAP" 1702069200
+        my-tibber amount=1.1077,level="CHEAP" 1702072800
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - influxdb-client-ruby/3.0.0
+      Authorization:
+      - Token <INFLUX_TOKEN>
+      Content-Type:
+      - text/plain
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      X-Influxdb-Build:
+      - OSS
+      X-Influxdb-Version:
+      - v2.7.4
+      Date:
+      - Fri, 08 Dec 2023 09:15:35 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 08 Dec 2023 09:15:35 GMT
+recorded_with: VCR 6.2.0

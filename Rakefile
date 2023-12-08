@@ -11,3 +11,13 @@ Rake::TestTask.new :test do |t|
 end
 
 task default: :test
+
+desc 'Get schema from Tibber and save it to schema.json'
+task :dump_schema do
+  require './app/tibber'
+  require './app/config'
+
+  config = Config.from_env
+
+  Tibber.new(config:).dump_schema
+end

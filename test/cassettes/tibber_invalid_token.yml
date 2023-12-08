@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.tibber.com/v1-beta/gql
+    body:
+      encoding: UTF-8
+      string: '{"query":"query Tibber__PRICE_INFO_QUERY {\n  viewer {\n    homes {\n      currentSubscription
+        {\n        priceInfo {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
+        {\n            total\n            startsAt\n            level\n          }\n        }\n      }\n    }\n  }\n}","operationName":"Tibber__PRICE_INFO_QUERY"}'
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - application/json
+      User-Agent:
+      - SOLECTRUS/Tibber-Collector
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer invalid_token
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 08 Dec 2023 07:41:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '106'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"6a-D4EHp016fETduq58hl56Kzj7tn8"
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: UTF-8
+      string: '{"errors":[{"message":"Context creation failed: invalid token","extensions":{"code":"UNAUTHENTICATED"}}]}
+
+        '
+  recorded_at: Fri, 08 Dec 2023 07:41:29 GMT
+recorded_with: VCR 6.2.0
