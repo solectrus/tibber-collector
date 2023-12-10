@@ -53,7 +53,7 @@ Config =
         influx_token: ENV.fetch('INFLUX_TOKEN'),
         influx_org: ENV.fetch('INFLUX_ORG'),
         influx_bucket: ENV.fetch('INFLUX_BUCKET'),
-        influx_measurement: ENV.fetch('INFLUX_MEASUREMENT', 'Tibber'),
+        influx_measurement: ENV.fetch('INFLUX_MEASUREMENT', 'Prices'),
       }
     end
 
