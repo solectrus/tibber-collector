@@ -18,6 +18,10 @@ class TibberTest < Minitest::Test
           price_info.today.each do |p|
             assert p.starts_at.is_a?(String)
             assert p.total.is_a?(Float)
+            assert_includes(
+              %w[CHEAP VERY_CHEAP NORMAL EXPENSIVE VERY_EXPENSIVE],
+              p.level,
+            )
           end
         end
 
