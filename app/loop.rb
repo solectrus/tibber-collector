@@ -21,11 +21,14 @@ class Loop
     loop do
       self.count += 1
 
+      puts "##{self.count} - #{Time.now}"
+
       push_to_influx(pull_from_tibber)
       break if max_count && count >= max_count
 
       puts "  Sleeping for #{config.tibber_interval} seconds ..."
       sleep config.tibber_interval
+      puts
     end
   end
 
@@ -34,7 +37,7 @@ class Loop
   attr_accessor :count
 
   def pull_from_tibber
-    print "##{count} Fetching prices from Tibber ... "
+    print '  Fetching prices from Tibber ... '
     Tibber.new(config:).price_info
   end
 
