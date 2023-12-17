@@ -2,7 +2,6 @@ require:
   - rubocop-minitest
   - rubocop-rake
   - rubocop-performance
-  - rubocop-minitest
   - rubocop-graphql
 
 AllCops:
@@ -19,7 +18,7 @@ Style/FrozenStringLiteralComment:
   Enabled: false
 
 Metrics/MethodLength:
-  Max: 40
+  Max: 20
 
 Metrics/AbcSize:
   Max: 25
@@ -30,13 +29,7 @@ Style/TrailingCommaInArguments:
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
 
-Style/TrailingCommaInArrayLiteral:
-  EnforcedStyleForMultiline: consistent_comma
-
 Layout/LineEndStringConcatenationIndentation:
-  Enabled: false
-
-Layout/FirstArrayElementIndentation:
   Enabled: false
 
 Minitest/MultipleAssertions:
