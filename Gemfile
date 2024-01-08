@@ -12,9 +12,6 @@ gem 'dotenv'
 # Ruby library for InfluxDB 2. (https://github.com/influxdata/influxdb-client-ruby)
 gem 'influxdb-client'
 
-# CSV Reading and Writing (https://github.com/ruby/csv)
-gem 'csv'
-
 group :development, :test do
   # Rake is a Make-like program implemented in Ruby (https://github.com/ruby/rake)
   gem 'rake'
