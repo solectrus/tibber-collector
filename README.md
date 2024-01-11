@@ -27,6 +27,6 @@ To charge your SENEC.Home battery when energy is cheap, you can use the [SENEC C
 
 ## License
 
-Copyright (c) 2023 Georg Ledermann, released under the MIT License
+Copyright (c) 2023-2024 Georg Ledermann, released under the MIT License
 
 Sponsored by [EP: Bölsche Frikom GmbH](https://www.ep.de/boelsche)
