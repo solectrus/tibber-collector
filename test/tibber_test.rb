@@ -13,11 +13,11 @@ class TibberTest < Minitest::Test
         capture_io do
           price_info = Tibber.new(config:).price_info
 
-          assert price_info.today.is_a?(Array)
+          assert_kind_of Array, price_info.today
 
           price_info.today.each do |p|
-            assert p.starts_at.is_a?(String)
-            assert p.total.is_a?(Float)
+            assert_kind_of String, p.starts_at
+            assert_kind_of Float, p.total
             assert_includes(
               %w[CHEAP VERY_CHEAP NORMAL EXPENSIVE VERY_EXPENSIVE],
               p.level,
