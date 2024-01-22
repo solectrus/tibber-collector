@@ -19,7 +19,7 @@ class FluxWriterText < Minitest::Test
     points = flux_writer.price_info_to_points(price_info)
 
     points.each do |point|
-      assert point.is_a?(InfluxDB2::Point)
+      assert_kind_of InfluxDB2::Point, point
 
       # The time should be in the future
       linux_time = point.instance_variable_get(:@time)
