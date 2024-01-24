@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'graphql-client'
 
 # A GraphQL language and runtime for Ruby (https://github.com/rmosolgo/graphql-ruby)
-gem 'graphql', '< 2.1'
+gem 'graphql'
 
 # Loads environment variables from `.env`. (https://github.com/bkeepers/dotenv)
 gem 'dotenv'
