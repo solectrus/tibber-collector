@@ -22,6 +22,7 @@ GEM
     crack (1.0.0)
       bigdecimal
       rexml
+    csv (3.2.8)
     docile (1.4.0)
     dotenv (3.0.3)
     drb (2.2.0)
@@ -95,7 +96,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  base64
   climate_control
+  csv
   dotenv
   graphql
   graphql-client
@@ -113,4 +116,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.5.5
+   2.5.6
