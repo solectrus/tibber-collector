@@ -94,7 +94,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  base64
   climate_control
   csv
   dotenv
