@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# GraphQL Client (https://github.com/github/graphql-client)
+# GraphQL Client (https://github.com/github-community-projects/graphql-client)
 gem 'graphql-client'
 
 # A GraphQL language and runtime for Ruby (https://github.com/rmosolgo/graphql-ruby)
