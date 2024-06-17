@@ -28,7 +28,7 @@ GEM
     drb (2.2.1)
     graphql (2.3.5)
       base64
-    graphql-client (0.22.0)
+    graphql-client (0.23.0)
       activesupport (>= 3.0)
       graphql (>= 1.13.0)
     hashdiff (1.1.0)
