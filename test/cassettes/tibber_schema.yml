@@ -36,7 +36,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 11 Jan 2024 06:46:37 GMT
+      - Wed, 17 Jul 2024 05:38:21 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -355,5 +355,5 @@ http_interactions:
         URL that specifies the behavior of this scalar.","type":{"kind":"NON_NULL","name":null,"ofType":{"kind":"SCALAR","name":"String","ofType":null}},"defaultValue":null}]}]}}}
 
         '
-  recorded_at: Thu, 11 Jan 2024 06:46:36 GMT
+  recorded_at: Wed, 17 Jul 2024 05:38:21 GMT
 recorded_with: VCR 6.2.0

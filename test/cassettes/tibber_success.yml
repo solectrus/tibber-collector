@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 11 Jan 2024 06:46:37 GMT
+      - Wed, 17 Jul 2024 05:38:21 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,13 +37,13 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Etag:
-      - W/"7e9-eDCHfOEh2iLgL6A+fBSO/U/PifE"
+      - W/"79d-tACMqpyQeHji91XW4SojTMH9IBc"
       Vary:
       - Accept-Encoding
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.4126,"startsAt":"2024-01-11T00:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.4233,"startsAt":"2024-01-11T01:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.4588,"startsAt":"2024-01-11T02:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.4955,"startsAt":"2024-01-11T03:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.5201,"startsAt":"2024-01-11T04:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.5983,"startsAt":"2024-01-11T05:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.7044,"startsAt":"2024-01-11T06:00:00.000+01:00","level":"VERY_CHEAP"},{"total":0.8663,"startsAt":"2024-01-11T07:00:00.000+01:00","level":"CHEAP"},{"total":1.3768,"startsAt":"2024-01-11T08:00:00.000+01:00","level":"NORMAL"},{"total":1.8672,"startsAt":"2024-01-11T09:00:00.000+01:00","level":"VERY_EXPENSIVE"},{"total":1.657,"startsAt":"2024-01-11T10:00:00.000+01:00","level":"EXPENSIVE"},{"total":1.563,"startsAt":"2024-01-11T11:00:00.000+01:00","level":"EXPENSIVE"},{"total":1.4651,"startsAt":"2024-01-11T12:00:00.000+01:00","level":"NORMAL"},{"total":1.46,"startsAt":"2024-01-11T13:00:00.000+01:00","level":"NORMAL"},{"total":1.5546,"startsAt":"2024-01-11T14:00:00.000+01:00","level":"EXPENSIVE"},{"total":1.7682,"startsAt":"2024-01-11T15:00:00.000+01:00","level":"EXPENSIVE"},{"total":2.0396,"startsAt":"2024-01-11T16:00:00.000+01:00","level":"VERY_EXPENSIVE"},{"total":2.2179,"startsAt":"2024-01-11T17:00:00.000+01:00","level":"VERY_EXPENSIVE"},{"total":2.0304,"startsAt":"2024-01-11T18:00:00.000+01:00","level":"VERY_EXPENSIVE"},{"total":1.9691,"startsAt":"2024-01-11T19:00:00.000+01:00","level":"VERY_EXPENSIVE"},{"total":1.7671,"startsAt":"2024-01-11T20:00:00.000+01:00","level":"EXPENSIVE"},{"total":1.5695,"startsAt":"2024-01-11T21:00:00.000+01:00","level":"EXPENSIVE"},{"total":1.4398,"startsAt":"2024-01-11T22:00:00.000+01:00","level":"NORMAL"},{"total":1.3174,"startsAt":"2024-01-11T23:00:00.000+01:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.4036,"startsAt":"2024-07-17T00:00:00.000+02:00","level":"NORMAL"},{"total":0.4009,"startsAt":"2024-07-17T01:00:00.000+02:00","level":"NORMAL"},{"total":0.3971,"startsAt":"2024-07-17T02:00:00.000+02:00","level":"NORMAL"},{"total":0.389,"startsAt":"2024-07-17T03:00:00.000+02:00","level":"NORMAL"},{"total":0.3809,"startsAt":"2024-07-17T04:00:00.000+02:00","level":"NORMAL"},{"total":0.3756,"startsAt":"2024-07-17T05:00:00.000+02:00","level":"NORMAL"},{"total":0.3982,"startsAt":"2024-07-17T06:00:00.000+02:00","level":"NORMAL"},{"total":0.4323,"startsAt":"2024-07-17T07:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4411,"startsAt":"2024-07-17T08:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4313,"startsAt":"2024-07-17T09:00:00.000+02:00","level":"NORMAL"},{"total":0.3966,"startsAt":"2024-07-17T10:00:00.000+02:00","level":"NORMAL"},{"total":0.3691,"startsAt":"2024-07-17T11:00:00.000+02:00","level":"NORMAL"},{"total":0.3794,"startsAt":"2024-07-17T12:00:00.000+02:00","level":"NORMAL"},{"total":0.3574,"startsAt":"2024-07-17T13:00:00.000+02:00","level":"NORMAL"},{"total":0.2524,"startsAt":"2024-07-17T14:00:00.000+02:00","level":"CHEAP"},{"total":0.1993,"startsAt":"2024-07-17T15:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.2261,"startsAt":"2024-07-17T16:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.2682,"startsAt":"2024-07-17T17:00:00.000+02:00","level":"CHEAP"},{"total":0.2799,"startsAt":"2024-07-17T18:00:00.000+02:00","level":"CHEAP"},{"total":0.2988,"startsAt":"2024-07-17T19:00:00.000+02:00","level":"CHEAP"},{"total":0.3001,"startsAt":"2024-07-17T20:00:00.000+02:00","level":"CHEAP"},{"total":0.2942,"startsAt":"2024-07-17T21:00:00.000+02:00","level":"CHEAP"},{"total":0.3091,"startsAt":"2024-07-17T22:00:00.000+02:00","level":"CHEAP"},{"total":0.2689,"startsAt":"2024-07-17T23:00:00.000+02:00","level":"CHEAP"}],"tomorrow":[]}}}]}}}
 
         '
-  recorded_at: Thu, 11 Jan 2024 06:46:37 GMT
+  recorded_at: Wed, 17 Jul 2024 05:38:21 GMT
 recorded_with: VCR 6.2.0
