@@ -9,10 +9,10 @@ services:
     environment:
       - TZ
       - INFLUX_HOST=influxdb
-      - INFLUX_TOKEN=${INFLUX_TOKEN_WRITE}
+      - INFLUX_TOKEN
       - INFLUX_ORG
       - INFLUX_BUCKET
-      - INFLUX_MEASUREMENT=${INFLUX_MEASUREMENT_PRICES}
+      - INFLUX_MEASUREMENT
       - TIBBER_TOKEN
       - TIBBER_INTERVAL
     restart: unless-stopped
@@ -25,7 +25,7 @@ services:
       - DOCKER_INFLUXDB_INIT_PASSWORD=${INFLUX_PASSWORD}
       - DOCKER_INFLUXDB_INIT_ORG=${INFLUX_ORG}
       - DOCKER_INFLUXDB_INIT_BUCKET=${INFLUX_BUCKET}
-      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=${INFLUX_ADMIN_TOKEN}
+      - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=${INFLUX_TOKEN}
     command: influxd run --bolt-path /var/lib/influxdb2/influxd.bolt --engine-path /var/lib/influxdb2/engine --store disk
     restart: unless-stopped
     healthcheck:
