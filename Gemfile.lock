@@ -26,8 +26,10 @@ GEM
     docile (1.4.1)
     dotenv (3.1.2)
     drb (2.2.1)
-    graphql (2.3.11)
+    fiber-storage (0.1.2)
+    graphql (2.3.12)
       base64
+      fiber-storage
     graphql-client (0.23.0)
       activesupport (>= 3.0)
       graphql (>= 1.13.0)
