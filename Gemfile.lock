@@ -28,7 +28,7 @@ GEM
     dotenv (3.1.2)
     drb (2.2.1)
     fiber-storage (1.0.0)
-    graphql (2.3.12)
+    graphql (2.3.13)
       base64
       fiber-storage
     graphql-client (0.23.0)
