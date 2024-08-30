@@ -7,23 +7,22 @@
 
 Collect upcoming Tibber energy prices and push them to InfluxDB.
 
+This is a companion service to the [SENEC Charger](https://github.com/solectrus/senec-charger), which allows you to charge your SENEC.Home battery when energy is cheap.
+
 ## Usage
 
-1. Make sure your InfluxDB database is ready (not subject of this README)
+1. Prepare an `.env` file (see `.env.example`)
 
-2. Prepare an `.env` file (see `.env.example`) with your InfluxDB credentials and the Tibber API token.
-
-3. Run the Docker container on your Linux box:
+2. Run the Docker containers on your Linux box:
 
    ```bash
-   docker run -it --rm \
-              --env-file .env \
-              ghcr.io/solectrus/tibber-collector
+   docker compose up
    ```
 
-It's recommended to integrate the `tibber-collector` into your [SOLECTRUS hosting](https://github.com/solectrus/hosting).
+In the `senec-charger` repository you can find an [example](https://github.com/solectrus/senec-charger/blob/develop/compose.yml) of how to use `tibber-collector` with the SENEC charger.
 
-To charge your SENEC.Home battery when energy is cheap, you can use the [SENEC Charger](https://github.com/solectrus/senec-charger).
+It's recommended to add `tibber-collector` and `senec-charger` to your [SOLECTRUS hosting](https://github.com/solectrus/hosting).
+
 
 ## License
 
