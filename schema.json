@@ -167,7 +167,7 @@
             },
             {
               "name": "mobile",
-              "description": "The mobile phone no of the corresponding entity",
+              "description": "The mobile phone number of the corresponding entity",
               "args": [
 
               ],
@@ -212,7 +212,7 @@
             },
             {
               "name": "firstName",
-              "description": "First/Christian name of the entity",
+              "description": "First/Given name of the entity",
               "args": [
 
               ],
@@ -226,7 +226,7 @@
             },
             {
               "name": "isCompany",
-              "description": "'true' if the entity is a company",
+              "description": "True if the entity is a company",
               "args": [
 
               ],
@@ -375,7 +375,7 @@
           "fields": [
             {
               "name": "endCursor",
-              "description": "The global ID of the last element in the list",
+              "description": "The global ID of the last element in the page",
               "args": [
 
               ],
@@ -417,7 +417,7 @@
             },
             {
               "name": "startCursor",
-              "description": "The global ID of the first element in the list",
+              "description": "The global ID of the first element in the page",
               "args": [
 
               ],
@@ -431,7 +431,7 @@
             },
             {
               "name": "count",
-              "description": "The number of elements in the list",
+              "description": "The number of elements in the page",
               "args": [
 
               ],
@@ -556,7 +556,7 @@
           "fields": [
             {
               "name": "endCursor",
-              "description": "The global ID of the last element in the list",
+              "description": "The global ID of the last element in the page",
               "args": [
 
               ],
@@ -598,7 +598,7 @@
             },
             {
               "name": "startCursor",
-              "description": "The global ID of the first element in the list",
+              "description": "The global ID of the first element in the page",
               "args": [
 
               ],
@@ -612,7 +612,7 @@
             },
             {
               "name": "count",
-              "description": "The number of elements in the list",
+              "description": "The number of elements in the page",
               "args": [
 
               ],
@@ -807,31 +807,31 @@
           "enumValues": [
             {
               "name": "NORMAL",
-              "description": "The price is greater than 90 % and smaller than 115 % compared to average price.",
+              "description": "The price is greater than 90 % and less than 115 % compared to average price",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "CHEAP",
-              "description": "The price is greater than 60 % and smaller or equal to 90 % compared to average price.",
+              "description": "The price is greater than 60 % and less or equal to 90 % compared to average price",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "VERY_CHEAP",
-              "description": "The price is smaller or equal to 60 % compared to average price.",
+              "description": "The price is smaller or equal to 60 % compared to average price",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "EXPENSIVE",
-              "description": "The price is greater or equal to 115 % and smaller than 140 % compared to average price.",
+              "description": "The price is greater or equal to 115 % and less than 140 % compared to average price",
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "VERY_EXPENSIVE",
-              "description": "The price is greater or equal to 140 % compared to average price.",
+              "description": "The price is greater or equal to 140 % compared to average price",
               "isDeprecated": false,
               "deprecationReason": null
             }
@@ -1328,7 +1328,7 @@
             },
             {
               "name": "range",
-              "description": "Range of prices relative to before/after arguments",
+              "description": "Range of prices, optionally relative to `before`/`after` arguments. Capped at 744 items (31 days) for resolution HOURLY, and 31 items for resolution DAILY. If you need to fetch a longer interval, perform multiple requests and take advantage of the `pageInfo` data. Do note that prices never change, so store already fetched historical prices locally; if you can use `today`/`tomorrow` instead, use that since the API can serve this data faster and in a more reliable way.",
               "args": [
                 {
                   "name": "resolution",
@@ -1346,7 +1346,7 @@
                 },
                 {
                   "name": "first",
-                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`",
+                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`. Limit count: 744 (HOURLY), 31 (DAILY).",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -1356,7 +1356,7 @@
                 },
                 {
                   "name": "last",
-                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`",
+                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`. Limit count: 744 (HOURLY), 31 (DAILY).",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -1366,7 +1366,7 @@
                 },
                 {
                   "name": "before",
-                  "description": "Base64-encoded ISO8601 date/time cursor position. Cannot be used in conjunction with `after`",
+                  "description": "Base64-encoded ISO8601 date/time cursor position. Cannot be used in conjunction with `after.` Has no influence when `first` is used.",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -1376,7 +1376,7 @@
                 },
                 {
                   "name": "after",
-                  "description": "Base64-encoded ISO8601 date/time cursor position. Cannot be used in conjunction with `before`",
+                  "description": "Base64-encoded ISO8601 date/time cursor position. Cannot be used in conjunction with `before`. Has no influence when `last` is used.",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -1909,7 +1909,7 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "no longer available."
+              "deprecationReason": "no longer available"
             },
             {
               "name": "priceInfo",
@@ -3048,7 +3048,7 @@
             },
             {
               "name": "consumption",
-              "description": "Consumption connection",
+              "description": "Consumption connection. Capped at 744 items (31 days) for resolution HOURLY, 31 items for DAILY, 52 items for WEEKLY, 12 items for MONTHLY and 1 for ANNUAL. If you need to fetch a longer interval, perform multiple requests and take advantage of the `pageInfo` data. Do note that this data is not updated in real-time, so try not to fetch this continually if there is no need to; and try to cache/store historical data locally.",
               "args": [
                 {
                   "name": "resolution",
@@ -3066,7 +3066,7 @@
                 },
                 {
                   "name": "first",
-                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`",
+                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`. Limit count: 744 (HOURLY), 31 (DAILY), 52 (WEEKLY), 12 (MONTHLY), 1 (ANNUAL).",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -3076,7 +3076,7 @@
                 },
                 {
                   "name": "last",
-                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`",
+                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`. Limit count: 744 (HOURLY), 31 (DAILY), 52 (WEEKLY), 12 (MONTHLY), 1 (ANNUAL).",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -3086,7 +3086,7 @@
                 },
                 {
                   "name": "before",
-                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `after`",
+                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `after`. Has no influence when `first` is used.",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -3096,7 +3096,7 @@
                 },
                 {
                   "name": "after",
-                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `before`",
+                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `before`. Has no influence when `last` is used.",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -3125,7 +3125,7 @@
             },
             {
               "name": "production",
-              "description": "Production connection",
+              "description": "Production connection. Capped at 744 items (31 days) for resolution HOURLY, 31 items for DAILY, 52 items for WEEKLY, 12 items for MONTHLY and 1 for ANNUAL. If you need to fetch a longer interval, perform multiple requests and take advantage of the `pageInfo` data. Do note that this data is not updated in real-time, so try not to fetch this continually if there is no need to; and try to cache/store historical data locally.",
               "args": [
                 {
                   "name": "resolution",
@@ -3143,7 +3143,7 @@
                 },
                 {
                   "name": "first",
-                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`",
+                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`. Limit count: 744 (HOURLY), 31 (DAILY), 52 (WEEKLY), 12 (MONTHLY), 1 (ANNUAL).",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -3153,7 +3153,7 @@
                 },
                 {
                   "name": "last",
-                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`",
+                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`. Limit count: 744 (HOURLY), 31 (DAILY), 52 (WEEKLY), 12 (MONTHLY), 1 (ANNUAL).",
                   "type": {
                     "kind": "SCALAR",
                     "name": "Int",
@@ -3163,7 +3163,7 @@
                 },
                 {
                   "name": "before",
-                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `after`",
+                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `after`. Has no influence when `first` is used.",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -3173,7 +3173,7 @@
                 },
                 {
                   "name": "after",
-                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `before`",
+                  "description": "Base64-encoded ISO8601 date/time cursor start. Cannot be used in conjunction with `before`. Has no influence when `last` is used.",
                   "type": {
                     "kind": "SCALAR",
                     "name": "String",
@@ -3565,7 +3565,7 @@
             },
             {
               "name": "type",
-              "description": "The type of home.",
+              "description": "The type of home",
               "type": {
                 "kind": "ENUM",
                 "name": "HomeType",
@@ -3575,7 +3575,7 @@
             },
             {
               "name": "numberOfResidents",
-              "description": "The number of people living in the home",
+              "description": "The number of people living in the household",
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -3585,7 +3585,7 @@
             },
             {
               "name": "primaryHeatingSource",
-              "description": "The primary form of heating in the household",
+              "description": "The primary form of heating in the home",
               "type": {
                 "kind": "ENUM",
                 "name": "HeatingSource",
@@ -3605,7 +3605,7 @@
             },
             {
               "name": "mainFuseSize",
-              "description": "The main fuse size",
+              "description": "The main fuse size in amperes",
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -3643,7 +3643,7 @@
             },
             {
               "name": "power",
-              "description": "Consumption at the moment (Watt)",
+              "description": "Consumption at the moment in watts (W)",
               "args": [
 
               ],
@@ -3661,7 +3661,7 @@
             },
             {
               "name": "lastMeterConsumption",
-              "description": "Last meter active import register state (kWh)",
+              "description": "Last meter active import register state in kilowatt-hours (kWh)",
               "args": [
 
               ],
@@ -3675,7 +3675,7 @@
             },
             {
               "name": "accumulatedConsumption",
-              "description": "kWh consumed since midnight",
+              "description": "Energy consumed since midnight in kilowatt-hours (kWh)",
               "args": [
 
               ],
@@ -3693,7 +3693,7 @@
             },
             {
               "name": "accumulatedProduction",
-              "description": "net kWh produced since midnight",
+              "description": "Net energy produced since midnight in kilowatt-hours (kWh)",
               "args": [
 
               ],
@@ -3711,7 +3711,7 @@
             },
             {
               "name": "accumulatedConsumptionLastHour",
-              "description": "kWh consumed since since last hour shift",
+              "description": "Energy consumed since since last hour shift in kilowatt-hours (kWh)",
               "args": [
 
               ],
@@ -3729,7 +3729,7 @@
             },
             {
               "name": "accumulatedProductionLastHour",
-              "description": "net kWh produced since last hour shift",
+              "description": "Net energy produced since last hour shift in kilowatt-hours (kWh)",
               "args": [
 
               ],
@@ -3789,7 +3789,7 @@
             },
             {
               "name": "minPower",
-              "description": "Min consumption since midnight (Watt)",
+              "description": "Minimum power consumption since midnight in watts (W)",
               "args": [
 
               ],
@@ -3807,7 +3807,7 @@
             },
             {
               "name": "averagePower",
-              "description": "Average consumption since midnight (Watt)",
+              "description": "Average power consumption since midnight in watts (W)",
               "args": [
 
               ],
@@ -3825,7 +3825,7 @@
             },
             {
               "name": "maxPower",
-              "description": "Peak consumption since midnight  (Watt)",
+              "description": "Peak power consumption since midnight in watts (W)",
               "args": [
 
               ],
@@ -3843,7 +3843,7 @@
             },
             {
               "name": "powerProduction",
-              "description": "Net production (A-) at the moment (Watt)",
+              "description": "Net power production (A-) at the moment in watts (W)",
               "args": [
 
               ],
@@ -3857,7 +3857,7 @@
             },
             {
               "name": "powerReactive",
-              "description": "Reactive consumption (Q+) at the moment (kVAr)",
+              "description": "Reactive power consumption (Q+) at the moment (kVAr)",
               "args": [
 
               ],
@@ -3871,7 +3871,7 @@
             },
             {
               "name": "powerProductionReactive",
-              "description": "Net reactive production (Q-) at the moment (kVAr)",
+              "description": "Net reactive power production (Q-) at the moment (kVAr)",
               "args": [
 
               ],
@@ -3885,7 +3885,7 @@
             },
             {
               "name": "minPowerProduction",
-              "description": "Min net production since midnight (Watt)",
+              "description": "Minimum net power production since midnight in watts (W)",
               "args": [
 
               ],
@@ -3899,7 +3899,7 @@
             },
             {
               "name": "maxPowerProduction",
-              "description": "Max net production since midnight (Watt)",
+              "description": "Maximum net power production since midnight in watts (W)",
               "args": [
 
               ],
@@ -3913,7 +3913,7 @@
             },
             {
               "name": "lastMeterProduction",
-              "description": "Last meter active export register state (kWh)",
+              "description": "Last meter active export register state in kilowatt-hours (kWh)",
               "args": [
 
               ],
@@ -3927,7 +3927,7 @@
             },
             {
               "name": "powerFactor",
-              "description": "Power factor (active power / apparent power)",
+              "description": "Power factor (active power / apparent power); 0 to 1 where 1 is 100 %",
               "args": [
 
               ],
@@ -4067,7 +4067,7 @@
             },
             {
               "name": "signalStrength",
-              "description": "Device signal strength (Pulse - dB; Watty - percent)",
+              "description": "Device signal strength (Pulse: dB(m); Watty: percent)",
               "args": [
 
               ],
@@ -4285,8 +4285,8 @@
                   "ofType": null
                 }
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "no longer available"
             },
             {
               "name": "updateHome",
@@ -4761,6 +4761,20 @@
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "isOneOf",
+              "description": null,
+              "args": [
+
+              ],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -5493,6 +5507,16 @@
               },
               "defaultValue": null
             }
+          ]
+        },
+        {
+          "name": "oneOf",
+          "description": "Indicates exactly one field must be supplied and this field must not be `null`.",
+          "locations": [
+            "INPUT_OBJECT"
+          ],
+          "args": [
+
           ]
         }
       ]
