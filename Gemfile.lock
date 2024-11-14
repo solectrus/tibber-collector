@@ -34,7 +34,7 @@ GEM
     graphql (2.4.3)
       base64
       fiber-storage
-    graphql-client (0.23.0)
+    graphql-client (0.24.0)
       activesupport (>= 3.0)
       graphql (>= 1.13.0)
     hashdiff (1.1.2)
