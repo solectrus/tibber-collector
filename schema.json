@@ -3379,7 +3379,7 @@
             },
             {
               "name": "accumulatedReward",
-              "description": "Accumulated reward since midnight; requires active Tibber power deal",
+              "description": "Accumulated production reward since midnight; requires active Tibber power deal. Note that this is unrelated to Grid Rewards.",
               "args": [],
               "type": {
                 "kind": "SCALAR",
