@@ -14,3 +14,6 @@ def mock_env(partial_env_hash)
     ENV.replace old
   end
 end
+
+# Silence deprecation warnings caused by the `influxdb-client` gem
+Warning[:deprecated] = false
