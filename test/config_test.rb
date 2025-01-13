@@ -63,4 +63,12 @@ class ConfigTest < Minitest::Test
     assert_equal 'my-bucket', config.influx_bucket
     assert_equal 'my-tibber', config.influx_measurement
   end
+
+  def test_empty_measurement
+    mock_env('INFLUX_MEASUREMENT' => '') do
+      config = Config.from_env
+
+      assert_equal 'Prices', config.influx_measurement
+    end
+  end
 end

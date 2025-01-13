@@ -1,3 +1,5 @@
+require_relative 'string'
+
 Config =
   Struct.new(
     :tibber_token,
@@ -53,7 +55,7 @@ Config =
         influx_token: ENV.fetch('INFLUX_TOKEN'),
         influx_org: ENV.fetch('INFLUX_ORG'),
         influx_bucket: ENV.fetch('INFLUX_BUCKET'),
-        influx_measurement: ENV.fetch('INFLUX_MEASUREMENT', 'Prices'),
+        influx_measurement: ENV.fetch('INFLUX_MEASUREMENT', '').presence || 'Prices',
       }
     end
 

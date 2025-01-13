@@ -19,9 +19,7 @@
             {
               "name": "address1",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -33,9 +31,7 @@
             {
               "name": "address2",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -47,9 +43,7 @@
             {
               "name": "address3",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -61,9 +55,7 @@
             {
               "name": "city",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -75,9 +67,7 @@
             {
               "name": "postalCode",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -89,9 +79,7 @@
             {
               "name": "country",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -103,9 +91,7 @@
             {
               "name": "latitude",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -117,9 +103,7 @@
             {
               "name": "longitude",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -130,9 +114,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -154,9 +136,7 @@
             {
               "name": "email",
               "description": "The email of the corresponding entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -168,9 +148,7 @@
             {
               "name": "mobile",
               "description": "The mobile phone number of the corresponding entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -181,9 +159,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -195,9 +171,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -213,9 +187,7 @@
             {
               "name": "firstName",
               "description": "First/Given name of the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -227,9 +199,7 @@
             {
               "name": "isCompany",
               "description": "True if the entity is a company",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -241,9 +211,7 @@
             {
               "name": "name",
               "description": "Full name of the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -259,9 +227,7 @@
             {
               "name": "middleName",
               "description": "Middle name of the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -273,9 +239,7 @@
             {
               "name": "lastName",
               "description": "Last name of the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -287,9 +251,7 @@
             {
               "name": "organizationNo",
               "description": "Organization number - only populated if entity is a company (isCompany=true)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -301,9 +263,7 @@
             {
               "name": "language",
               "description": "The primary language of the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -315,9 +275,7 @@
             {
               "name": "contactInfo",
               "description": "Contact information of the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "ContactInfo",
@@ -329,9 +287,7 @@
             {
               "name": "address",
               "description": "Address information for the entity",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Address",
@@ -342,9 +298,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -376,9 +330,7 @@
             {
               "name": "endCursor",
               "description": "The global ID of the last element in the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -390,9 +342,7 @@
             {
               "name": "hasNextPage",
               "description": "True if further pages are available",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -404,9 +354,7 @@
             {
               "name": "hasPreviousPage",
               "description": "True if previous pages are available",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -418,9 +366,7 @@
             {
               "name": "startCursor",
               "description": "The global ID of the first element in the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -432,9 +378,7 @@
             {
               "name": "count",
               "description": "The number of elements in the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -446,9 +390,7 @@
             {
               "name": "currency",
               "description": "The currency of the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -460,9 +402,7 @@
             {
               "name": "totalCost",
               "description": "Page total cost",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -474,9 +414,7 @@
             {
               "name": "energyCost",
               "description": "Page energy cost",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -488,9 +426,7 @@
             {
               "name": "totalConsumption",
               "description": "Total consumption for page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -502,9 +438,7 @@
             {
               "name": "filtered",
               "description": "Number of entries that have been filtered from result set due to empty nodes",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -557,9 +491,7 @@
             {
               "name": "endCursor",
               "description": "The global ID of the last element in the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -571,9 +503,7 @@
             {
               "name": "hasNextPage",
               "description": "True if further pages are available",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -585,9 +515,7 @@
             {
               "name": "hasPreviousPage",
               "description": "True if previous pages are available",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -599,9 +527,7 @@
             {
               "name": "startCursor",
               "description": "The global ID of the first element in the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -613,9 +539,7 @@
             {
               "name": "count",
               "description": "The number of elements in the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -627,9 +551,7 @@
             {
               "name": "currency",
               "description": "The currency of the page",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -641,9 +563,7 @@
             {
               "name": "totalProfit",
               "description": "Page total profit",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -655,9 +575,7 @@
             {
               "name": "totalProduction",
               "description": "Page total production",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -669,9 +587,7 @@
             {
               "name": "filtered",
               "description": "Number of entries that have been filtered from result set due to empty nodes",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -704,9 +620,7 @@
             {
               "name": "total",
               "description": "The total price (energy + taxes)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -718,9 +632,7 @@
             {
               "name": "energy",
               "description": "Nord Pool spot price",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -732,9 +644,7 @@
             {
               "name": "tax",
               "description": "The tax part of the price (guarantee of origin certificate, energy tax (Sweden only) and VAT)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -746,9 +656,7 @@
             {
               "name": "startsAt",
               "description": "The start time of the price",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -760,9 +668,7 @@
             {
               "name": "currency",
               "description": "The price currency",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -778,9 +684,7 @@
             {
               "name": "level",
               "description": "The price level compared to recent price values",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "ENUM",
                 "name": "PriceLevel",
@@ -791,9 +695,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -846,9 +748,7 @@
             {
               "name": "cursor",
               "description": "The global ID of the element",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -864,9 +764,7 @@
             {
               "name": "node",
               "description": "A single price node",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Price",
@@ -877,9 +775,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -891,9 +787,7 @@
             {
               "name": "endCursor",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -905,9 +799,7 @@
             {
               "name": "hasNextPage",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -919,9 +811,7 @@
             {
               "name": "hasPreviousPage",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -933,9 +823,7 @@
             {
               "name": "startCursor",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -946,9 +834,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": [
             {
@@ -976,9 +862,7 @@
             {
               "name": "endCursor",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -990,9 +874,7 @@
             {
               "name": "hasNextPage",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -1004,9 +886,7 @@
             {
               "name": "hasPreviousPage",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -1018,9 +898,7 @@
             {
               "name": "startCursor",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1032,9 +910,7 @@
             {
               "name": "resolution",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1050,9 +926,7 @@
             {
               "name": "currency",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1068,9 +942,7 @@
             {
               "name": "count",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1086,9 +958,7 @@
             {
               "name": "precision",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1100,9 +970,7 @@
             {
               "name": "minEnergy",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -1114,9 +982,7 @@
             {
               "name": "minTotal",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -1128,9 +994,7 @@
             {
               "name": "maxEnergy",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -1142,9 +1006,7 @@
             {
               "name": "maxTotal",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -1173,9 +1035,7 @@
             {
               "name": "pageInfo",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1191,9 +1051,7 @@
             {
               "name": "edges",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1213,9 +1071,7 @@
             {
               "name": "nodes",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1234,9 +1090,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1271,9 +1125,7 @@
             {
               "name": "current",
               "description": "The energy price right now",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Price",
@@ -1285,9 +1137,7 @@
             {
               "name": "today",
               "description": "The hourly prices of the current day",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1307,9 +1157,7 @@
             {
               "name": "tomorrow",
               "description": "The hourly prices of the upcoming day",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1395,9 +1243,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1438,9 +1284,7 @@
             {
               "name": "time",
               "description": "The start time of the price",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1456,9 +1300,7 @@
             {
               "name": "energy",
               "description": "Nord Pool spot price",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1474,9 +1316,7 @@
             {
               "name": "total",
               "description": "The total price (incl. tax)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1492,9 +1332,7 @@
             {
               "name": "tax",
               "description": "The tax part of the price (guarantee of origin certificate, energy tax (Sweden only) and VAT)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1510,9 +1348,7 @@
             {
               "name": "difference",
               "description": "The percentage difference compared to the trailing price average (1 day for 'hourly', 30 days for 'daily' and 32 months for 'monthly')",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1528,9 +1364,7 @@
             {
               "name": "level",
               "description": "The price level compared to recent price values (calculated using 'difference' and 'priceRating.thresholdPercentages')",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1545,9 +1379,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1559,9 +1391,7 @@
             {
               "name": "minEnergy",
               "description": "Lowest Nord Pool spot price over the time period",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1577,9 +1407,7 @@
             {
               "name": "maxEnergy",
               "description": "Highest Nord Pool spot price over the time period",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1595,9 +1423,7 @@
             {
               "name": "minTotal",
               "description": "Lowest total price (incl. tax) over the time period",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1613,9 +1439,7 @@
             {
               "name": "maxTotal",
               "description": "Highest total price (incl. tax) over the time period",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1631,9 +1455,7 @@
             {
               "name": "currency",
               "description": "The price currency",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1649,9 +1471,7 @@
             {
               "name": "entries",
               "description": "The individual price entries aggregated by hourly/daily/monthly values",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1674,9 +1494,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1688,9 +1506,7 @@
             {
               "name": "high",
               "description": "The percentage difference when the price is considered to be 'high' (market dependent)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1706,9 +1522,7 @@
             {
               "name": "low",
               "description": "The percentage difference when the price is considered to be 'low' (market dependent)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1723,9 +1537,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1737,9 +1549,7 @@
             {
               "name": "thresholdPercentages",
               "description": "The different 'high'/'low' price breakpoints (market dependent)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1755,9 +1565,7 @@
             {
               "name": "hourly",
               "description": "The hourly prices of today, the previous 7 days, and tomorrow",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1773,9 +1581,7 @@
             {
               "name": "daily",
               "description": "The daily prices of today and the previous 30 days",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1791,9 +1597,7 @@
             {
               "name": "monthly",
               "description": "The monthly prices of this month and the previous 31 months",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1808,9 +1612,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1822,9 +1624,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1840,9 +1640,7 @@
             {
               "name": "subscriber",
               "description": "The owner of the subscription",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1858,9 +1656,7 @@
             {
               "name": "validFrom",
               "description": "The time the subscription started",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1872,9 +1668,7 @@
             {
               "name": "validTo",
               "description": "The time the subscription ended",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1886,9 +1680,7 @@
             {
               "name": "status",
               "description": "The current status of the subscription",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1900,9 +1692,7 @@
             {
               "name": "statusReason",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -1914,9 +1704,7 @@
             {
               "name": "priceInfo",
               "description": "Price information related to the subscription",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "PriceInfo",
@@ -1928,9 +1716,7 @@
             {
               "name": "priceRating",
               "description": "Price information related to the subscription",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "PriceRating",
@@ -1941,9 +1727,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -1955,9 +1739,7 @@
             {
               "name": "from",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1973,9 +1755,7 @@
             {
               "name": "to",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -1991,9 +1771,7 @@
             {
               "name": "unitPrice",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2005,9 +1783,7 @@
             {
               "name": "unitPriceVAT",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2019,9 +1795,7 @@
             {
               "name": "consumption",
               "description": "kWh consumed",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2033,9 +1807,7 @@
             {
               "name": "consumptionUnit",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2047,9 +1819,7 @@
             {
               "name": "totalCost",
               "description": "Total cost of the consumption",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2061,9 +1831,7 @@
             {
               "name": "unitCost",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2075,9 +1843,7 @@
             {
               "name": "cost",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2089,9 +1855,7 @@
             {
               "name": "currency",
               "description": "The cost currency",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2102,9 +1866,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2116,9 +1878,7 @@
             {
               "name": "from",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2134,9 +1894,7 @@
             {
               "name": "to",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2152,9 +1910,7 @@
             {
               "name": "unitPrice",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2166,9 +1922,7 @@
             {
               "name": "unitPriceVAT",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2180,9 +1934,7 @@
             {
               "name": "production",
               "description": "kWh produced",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2194,9 +1946,7 @@
             {
               "name": "productionUnit",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2208,9 +1958,7 @@
             {
               "name": "profit",
               "description": "Total profit of the production",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -2222,9 +1970,7 @@
             {
               "name": "currency",
               "description": "The cost currency",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2235,9 +1981,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2249,9 +1993,7 @@
             {
               "name": "cursor",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2267,9 +2009,7 @@
             {
               "name": "node",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2284,9 +2024,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2298,9 +2036,7 @@
             {
               "name": "cursor",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2316,9 +2052,7 @@
             {
               "name": "node",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2333,9 +2067,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2347,9 +2079,7 @@
             {
               "name": "pageInfo",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2365,9 +2095,7 @@
             {
               "name": "nodes",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -2383,9 +2111,7 @@
             {
               "name": "edges",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -2400,9 +2126,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2414,9 +2138,7 @@
             {
               "name": "pageInfo",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2432,9 +2154,7 @@
             {
               "name": "nodes",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -2450,9 +2170,7 @@
             {
               "name": "edges",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -2467,9 +2185,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2481,9 +2197,7 @@
             {
               "name": "consumptionEan",
               "description": "The metering point ID of the home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2495,9 +2209,7 @@
             {
               "name": "gridCompany",
               "description": "The grid provider of the home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2509,9 +2221,7 @@
             {
               "name": "gridAreaCode",
               "description": "The grid area the home/metering point belongs to",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2523,9 +2233,7 @@
             {
               "name": "priceAreaCode",
               "description": "The price area the home/metering point belongs to",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2537,9 +2245,7 @@
             {
               "name": "productionEan",
               "description": "The metering point ID of the production",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2551,9 +2257,7 @@
             {
               "name": "energyTaxType",
               "description": "The eltax type of the home (only relevant for Swedish homes)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2565,9 +2269,7 @@
             {
               "name": "vatType",
               "description": "The VAT type of the home (only relevant for Norwegian homes)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2579,9 +2281,7 @@
             {
               "name": "estimatedAnnualConsumption",
               "description": "The estimated annual consumption as reported by grid company",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -2592,9 +2292,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2788,9 +2486,7 @@
             {
               "name": "realTimeConsumptionEnabled",
               "description": "'true' if Tibber Pulse or Watty device is paired at home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -2801,9 +2497,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -2815,9 +2509,7 @@
             {
               "name": "id",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2833,9 +2525,7 @@
             {
               "name": "timeZone",
               "description": "The time zone the home resides in",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2851,9 +2541,7 @@
             {
               "name": "appNickname",
               "description": "The nickname given to the home by the user",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -2865,9 +2553,7 @@
             {
               "name": "appAvatar",
               "description": "The chosen avatar for the home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2883,9 +2569,7 @@
             {
               "name": "size",
               "description": "The size of the home in square meters",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -2897,9 +2581,7 @@
             {
               "name": "type",
               "description": "The type of home.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -2915,9 +2597,7 @@
             {
               "name": "numberOfResidents",
               "description": "The number of people living in the home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -2929,9 +2609,7 @@
             {
               "name": "primaryHeatingSource",
               "description": "The primary form of heating in the household",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "ENUM",
                 "name": "HeatingSource",
@@ -2943,9 +2621,7 @@
             {
               "name": "hasVentilationSystem",
               "description": "Whether the home has a ventilation system",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -2957,9 +2633,7 @@
             {
               "name": "mainFuseSize",
               "description": "The main fuse size",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -2971,9 +2645,7 @@
             {
               "name": "address",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Address",
@@ -2985,9 +2657,7 @@
             {
               "name": "owner",
               "description": "The registered owner of the house",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "LegalEntity",
@@ -2999,9 +2669,7 @@
             {
               "name": "meteringPointData",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "MeteringPointData",
@@ -3013,9 +2681,7 @@
             {
               "name": "currentSubscription",
               "description": "The current/latest subscription related to the home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "Subscription",
@@ -3027,9 +2693,7 @@
             {
               "name": "subscriptions",
               "description": "All historic subscriptions related to the home",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3203,9 +2867,7 @@
             {
               "name": "features",
               "description": "Home features",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "HomeFeatures",
@@ -3216,9 +2878,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -3230,9 +2890,7 @@
             {
               "name": "login",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3244,9 +2902,7 @@
             {
               "name": "userId",
               "description": "Unique user identifier",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3258,9 +2914,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3272,9 +2926,7 @@
             {
               "name": "accountType",
               "description": "The type of account for the logged-in user.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3298,9 +2950,7 @@
             {
               "name": "homes",
               "description": "All homes visible to the logged-in user",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3351,9 +3001,7 @@
             {
               "name": "websocketSubscriptionUrl",
               "description": "URL for websocket subscriptions",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3364,9 +3012,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -3378,9 +3024,7 @@
             {
               "name": "viewer",
               "description": "This contains data about the logged-in user",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3395,9 +3039,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -3458,9 +3100,7 @@
             {
               "name": "homeId",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3476,9 +3116,7 @@
             {
               "name": "time",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3490,9 +3128,7 @@
             {
               "name": "reading",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3507,9 +3143,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -3626,9 +3260,7 @@
             {
               "name": "timestamp",
               "description": "Timestamp when usage occurred",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3644,9 +3276,7 @@
             {
               "name": "power",
               "description": "Consumption at the moment in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3662,9 +3292,7 @@
             {
               "name": "lastMeterConsumption",
               "description": "Last meter active import register state in kilowatt-hours (kWh)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3676,9 +3304,7 @@
             {
               "name": "accumulatedConsumption",
               "description": "Energy consumed since midnight in kilowatt-hours (kWh)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3694,9 +3320,7 @@
             {
               "name": "accumulatedProduction",
               "description": "Net energy produced since midnight in kilowatt-hours (kWh)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3712,9 +3336,7 @@
             {
               "name": "accumulatedConsumptionLastHour",
               "description": "Energy consumed since since last hour shift in kilowatt-hours (kWh)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3730,9 +3352,7 @@
             {
               "name": "accumulatedProductionLastHour",
               "description": "Net energy produced since last hour shift in kilowatt-hours (kWh)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3748,9 +3368,7 @@
             {
               "name": "accumulatedCost",
               "description": "Accumulated cost since midnight; requires active Tibber power deal; includes VAT (where applicable)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3761,10 +3379,8 @@
             },
             {
               "name": "accumulatedReward",
-              "description": "Accumulated reward since midnight; requires active Tibber power deal",
-              "args": [
-
-              ],
+              "description": "Accumulated production reward since midnight; requires active Tibber power deal. Note that this is unrelated to Grid Rewards.",
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3776,9 +3392,7 @@
             {
               "name": "currency",
               "description": "Currency of displayed cost; requires active Tibber power deal",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -3790,9 +3404,7 @@
             {
               "name": "minPower",
               "description": "Minimum power consumption since midnight in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3808,9 +3420,7 @@
             {
               "name": "averagePower",
               "description": "Average power consumption since midnight in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3826,9 +3436,7 @@
             {
               "name": "maxPower",
               "description": "Peak power consumption since midnight in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -3844,9 +3452,7 @@
             {
               "name": "powerProduction",
               "description": "Net power production (A-) at the moment in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3858,9 +3464,7 @@
             {
               "name": "powerReactive",
               "description": "Reactive power consumption (Q+) at the moment (kVAr)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3872,9 +3476,7 @@
             {
               "name": "powerProductionReactive",
               "description": "Net reactive power production (Q-) at the moment (kVAr)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3886,9 +3488,7 @@
             {
               "name": "minPowerProduction",
               "description": "Minimum net power production since midnight in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3900,9 +3500,7 @@
             {
               "name": "maxPowerProduction",
               "description": "Maximum net power production since midnight in watts (W)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3914,9 +3512,7 @@
             {
               "name": "lastMeterProduction",
               "description": "Last meter active export register state in kilowatt-hours (kWh)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3928,9 +3524,7 @@
             {
               "name": "powerFactor",
               "description": "Power factor (active power / apparent power); 0 to 1 where 1 is 100 %",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3942,9 +3536,7 @@
             {
               "name": "voltagePhase1",
               "description": "Voltage on phase 1; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3956,9 +3548,7 @@
             {
               "name": "voltagePhase2",
               "description": "Voltage on phase 2; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3970,9 +3560,7 @@
             {
               "name": "voltagePhase3",
               "description": "Voltage on phase 3; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3984,9 +3572,7 @@
             {
               "name": "currentPhase1",
               "description": "Current on phase 1; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -3998,9 +3584,7 @@
             {
               "name": "currentL1",
               "description": "Current on L1; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -4012,9 +3596,7 @@
             {
               "name": "currentPhase2",
               "description": "Current on phase 2; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -4026,9 +3608,7 @@
             {
               "name": "currentL2",
               "description": "Current on L2; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -4040,9 +3620,7 @@
             {
               "name": "currentPhase3",
               "description": "Current on phase 3; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -4054,9 +3632,7 @@
             {
               "name": "currentL3",
               "description": "Current on L3; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Float",
@@ -4068,9 +3644,7 @@
             {
               "name": "signalStrength",
               "description": "Device signal strength (Pulse: dB(m); Watty: percent)",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Int",
@@ -4081,9 +3655,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4211,9 +3783,7 @@
             {
               "name": "successful",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4229,9 +3799,7 @@
             {
               "name": "pushedToNumberOfDevices",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4246,9 +3814,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4352,9 +3918,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4419,9 +3983,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4433,9 +3995,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -4447,9 +4007,7 @@
             {
               "name": "types",
               "description": "A list of all types supported by this server.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4473,9 +4031,7 @@
             {
               "name": "queryType",
               "description": "The type that query operations will be rooted at.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4491,9 +4047,7 @@
             {
               "name": "mutationType",
               "description": "If this server supports mutation, the type that mutation operations will be rooted at.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
@@ -4505,9 +4059,7 @@
             {
               "name": "subscriptionType",
               "description": "If this server support subscription, the type that subscription operations will be rooted at.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
@@ -4519,9 +4071,7 @@
             {
               "name": "directives",
               "description": "A list of all directives supported by this server.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4544,9 +4094,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4558,9 +4106,7 @@
             {
               "name": "kind",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4576,9 +4122,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -4590,9 +4134,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -4604,9 +4146,7 @@
             {
               "name": "specifiedByURL",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -4649,9 +4189,7 @@
             {
               "name": "interfaces",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -4671,9 +4209,7 @@
             {
               "name": "possibleTypes",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "LIST",
                 "name": null,
@@ -4755,9 +4291,7 @@
             {
               "name": "ofType",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "__Type",
@@ -4769,9 +4303,7 @@
             {
               "name": "isOneOf",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "Boolean",
@@ -4782,9 +4314,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4855,9 +4385,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4873,9 +4401,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -4922,9 +4448,7 @@
             {
               "name": "type",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4940,9 +4464,7 @@
             {
               "name": "isDeprecated",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -4958,9 +4480,7 @@
             {
               "name": "deprecationReason",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -4971,9 +4491,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -4985,9 +4503,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5003,9 +4519,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -5017,9 +4531,7 @@
             {
               "name": "type",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5035,9 +4547,7 @@
             {
               "name": "defaultValue",
               "description": "A GraphQL-formatted string representing the default value for this input value.",
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -5049,9 +4559,7 @@
             {
               "name": "isDeprecated",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5067,9 +4575,7 @@
             {
               "name": "deprecationReason",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -5080,9 +4586,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -5094,9 +4598,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5112,9 +4614,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -5126,9 +4626,7 @@
             {
               "name": "isDeprecated",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5144,9 +4642,7 @@
             {
               "name": "deprecationReason",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -5157,9 +4653,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -5171,9 +4665,7 @@
             {
               "name": "name",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5189,9 +4681,7 @@
             {
               "name": "description",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "SCALAR",
                 "name": "String",
@@ -5203,9 +4693,7 @@
             {
               "name": "isRepeatable",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5221,9 +4709,7 @@
             {
               "name": "locations",
               "description": null,
-              "args": [
-
-              ],
+              "args": [],
               "type": {
                 "kind": "NON_NULL",
                 "name": null,
@@ -5281,9 +4767,7 @@
             }
           ],
           "inputFields": null,
-          "interfaces": [
-
-          ],
+          "interfaces": [],
           "enumValues": null,
           "possibleTypes": null
         },
@@ -5515,9 +4999,7 @@
           "locations": [
             "INPUT_OBJECT"
           ],
-          "args": [
-
-          ]
+          "args": []
         }
       ]
     }
