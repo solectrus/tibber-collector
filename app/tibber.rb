@@ -32,8 +32,6 @@ class Tibber
     GraphQL::Client.dump_schema(HTTP, SCHEMA_FILENAME, context: { config: })
   end
 
-  private
-
   BASE_URL = 'https://api.tibber.com/v1-beta/gql'.freeze
   SCHEMA_FILENAME = 'schema.json'.freeze
 
