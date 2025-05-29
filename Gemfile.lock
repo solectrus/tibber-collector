@@ -35,7 +35,7 @@ GEM
       base64
       fiber-storage
       logger
-    graphql-client (0.25.0)
+    graphql-client (0.26.0)
       activesupport (>= 3.0)
       graphql (>= 1.13.0)
     hashdiff (1.2.0)
