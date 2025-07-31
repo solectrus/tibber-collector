@@ -1,7 +1,7 @@
 [![Continuous integration](https://github.com/solectrus/tibber-collector/actions/workflows/push.yml/badge.svg)](https://github.com/solectrus/tibber-collector/actions/workflows/push.yml)
 [![wakatime](https://wakatime.com/badge/user/697af4f5-617a-446d-ba58-407e7f3e0243/project/018c1bd2-0182-4fb4-a801-4bdd567f1a76.svg)](https://wakatime.com/badge/user/697af4f5-617a-446d-ba58-407e7f3e0243/project/018c1bd2-0182-4fb4-a801-4bdd567f1a76)
-[![Maintainability](https://api.codeclimate.com/v1/badges/1b392dc7af3b0b5cb57d/maintainability)](https://codeclimate.com/repos/6572cf994f3c7e5e3e355636/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/1b392dc7af3b0b5cb57d/test_coverage)](https://codeclimate.com/repos/6572cf994f3c7e5e3e355636/test_coverage)
+[![Maintainability](https://qlty.sh/badges/3c99f5be-a278-4961-8550-08fd3c8ad4ef/maintainability.svg)](https://qlty.sh/gh/solectrus/projects/tibber-collector)
+[![Code Coverage](https://qlty.sh/badges/3c99f5be-a278-4961-8550-08fd3c8ad4ef/coverage.svg)](https://qlty.sh/gh/solectrus/projects/tibber-collector)
 
 # Tibber collector
 

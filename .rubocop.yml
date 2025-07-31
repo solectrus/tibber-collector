@@ -1,10 +1,8 @@
-require:
-  - rubocop-graphql
-
 plugins:
   - rubocop-minitest
   - rubocop-rake
   - rubocop-performance
+  - rubocop-graphql
 
 AllCops:
   TargetRubyVersion: 3.4
