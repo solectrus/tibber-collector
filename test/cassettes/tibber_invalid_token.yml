@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"query":"query Tibber__PRICE_INFO_QUERY {\n  viewer {\n    homes {\n      currentSubscription
-        {\n        priceInfo {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
+        {\n        priceInfo(resolution: QUARTER_HOURLY) {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
         {\n            total\n            startsAt\n            level\n          }\n        }\n      }\n    }\n  }\n}","operationName":"Tibber__PRICE_INFO_QUERY"}'
     headers:
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 23 Sep 2025 05:09:14 GMT
+      - Tue, 23 Sep 2025 05:10:38 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -47,5 +47,5 @@ http_interactions:
       string: '{"errors":[{"message":"invalid token","locations":[{"line":2,"column":3}],"path":["viewer"],"extensions":{"code":"UNAUTHENTICATED"}}],"data":null}
 
         '
-  recorded_at: Tue, 23 Sep 2025 05:09:14 GMT
+  recorded_at: Tue, 23 Sep 2025 05:10:38 GMT
 recorded_with: VCR 6.3.1

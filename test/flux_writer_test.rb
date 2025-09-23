@@ -26,10 +26,10 @@ class FluxWriterText < Minitest::Test
 
       assert_operator linux_time, :>, Time.new(2023, 12, 5, 0, 0, 0).to_i
 
-      # The time should be always a full hour, so minutes and seconds should be zero
+      # The time should be always a quarter hour, so minutes should be 0, 15, 30, or 45 and seconds should be zero
       time = Time.at(linux_time)
 
-      assert_predicate time.min, :zero?
+      assert_includes [0, 15, 30, 45], time.min
       assert_predicate time.sec, :zero?
     end
   end

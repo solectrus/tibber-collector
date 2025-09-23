@@ -6,7 +6,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"query":"query Tibber__PRICE_INFO_QUERY {\n  viewer {\n    homes {\n      currentSubscription
-        {\n        priceInfo {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
+        {\n        priceInfo(resolution: QUARTER_HOURLY) {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
         {\n            total\n            startsAt\n            level\n          }\n        }\n      }\n    }\n  }\n}","operationName":"Tibber__PRICE_INFO_QUERY"}'
     headers:
       Accept-Encoding:
@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 23 Sep 2025 05:09:14 GMT
+      - Tue, 23 Sep 2025 05:10:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -39,15 +39,15 @@ http_interactions:
       Cache-Control:
       - no-store
       Etag:
-      - W/"81d-kJKt3KGxA87ccAxuAsKG6v+IGXE"
+      - W/"1f54-W7Q0XKfE3DsALApFyuAILQZLgVc"
       Vary:
       - Accept-Encoding
     body:
       encoding: UTF-8
-      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.1299,"startsAt":"2025-09-23T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.3395,"startsAt":"2025-09-23T01:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4594,"startsAt":"2025-09-23T22:00:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:00:00.000+02:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.1299,"startsAt":"2025-09-23T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1299,"startsAt":"2025-09-23T00:15:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1299,"startsAt":"2025-09-23T00:30:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1299,"startsAt":"2025-09-23T00:45:00.000+02:00","level":"VERY_CHEAP"},{"total":0.3395,"startsAt":"2025-09-23T01:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3395,"startsAt":"2025-09-23T01:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.3395,"startsAt":"2025-09-23T01:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.3395,"startsAt":"2025-09-23T01:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4594,"startsAt":"2025-09-23T22:00:00.000+02:00","level":"NORMAL"},{"total":0.4594,"startsAt":"2025-09-23T22:15:00.000+02:00","level":"NORMAL"},{"total":0.4594,"startsAt":"2025-09-23T22:30:00.000+02:00","level":"NORMAL"},{"total":0.4594,"startsAt":"2025-09-23T22:45:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:00:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:15:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:30:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:45:00.000+02:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
 
         '
-  recorded_at: Tue, 23 Sep 2025 05:09:14 GMT
+  recorded_at: Tue, 23 Sep 2025 05:10:39 GMT
 - request:
     method: post
     uri: http://<INFLUX_HOST>:8086/api/v2/write?bucket=<INFLUX_BUCKET>&org=<INFLUX_ORG>&precision=s
@@ -55,29 +55,101 @@ http_interactions:
       encoding: UTF-8
       string: |-
         my-tibber amount=0.1299,level="VERY_CHEAP" 1758578400
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758579300
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758580200
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758581100
         my-tibber amount=0.3395,level="EXPENSIVE" 1758582000
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758582900
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758583800
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758584700
         my-tibber amount=0.3398,level="EXPENSIVE" 1758585600
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758586500
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758587400
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758588300
         my-tibber amount=0.34,level="EXPENSIVE" 1758589200
+        my-tibber amount=0.34,level="EXPENSIVE" 1758590100
+        my-tibber amount=0.34,level="EXPENSIVE" 1758591000
+        my-tibber amount=0.34,level="EXPENSIVE" 1758591900
         my-tibber amount=0.3369,level="EXPENSIVE" 1758592800
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758593700
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758594600
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758595500
         my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758596400
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758597300
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758598200
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758599100
         my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758600000
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758600900
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758601800
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758602700
         my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758603600
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758604500
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758605400
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758606300
         my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758607200
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758608100
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758609000
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758609900
         my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758610800
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758611700
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758612600
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758613500
         my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758614400
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758615300
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758616200
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758617100
         my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758618000
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758618900
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758619800
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758620700
         my-tibber amount=0.4474,level="EXPENSIVE" 1758621600
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758622500
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758623400
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758624300
         my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758625200
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758626100
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758627000
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758627900
         my-tibber amount=0.4534,level="EXPENSIVE" 1758628800
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758629700
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758630600
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758631500
         my-tibber amount=0.4342,level="EXPENSIVE" 1758632400
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758633300
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758634200
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758635100
         my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758636000
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758636900
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758637800
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758638700
         my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758639600
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758640500
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758641400
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758642300
         my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758643200
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758644100
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758645000
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758645900
         my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758646800
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758647700
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758648600
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758649500
         my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758650400
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758651300
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758652200
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758653100
         my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758654000
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758654900
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758655800
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758656700
         my-tibber amount=0.4594,level="NORMAL" 1758657600
+        my-tibber amount=0.4594,level="NORMAL" 1758658500
+        my-tibber amount=0.4594,level="NORMAL" 1758659400
+        my-tibber amount=0.4594,level="NORMAL" 1758660300
         my-tibber amount=0.4454,level="NORMAL" 1758661200
+        my-tibber amount=0.4454,level="NORMAL" 1758662100
+        my-tibber amount=0.4454,level="NORMAL" 1758663000
+        my-tibber amount=0.4454,level="NORMAL" 1758663900
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -99,18 +171,18 @@ http_interactions:
       X-Influxdb-Version:
       - v2.7.12
       Date:
-      - Tue, 23 Sep 2025 05:09:14 GMT
+      - Tue, 23 Sep 2025 05:10:39 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 23 Sep 2025 05:09:14 GMT
+  recorded_at: Tue, 23 Sep 2025 05:10:39 GMT
 - request:
     method: post
     uri: https://api.tibber.com/v1-beta/gql
     body:
       encoding: UTF-8
       string: '{"query":"query Tibber__PRICE_INFO_QUERY {\n  viewer {\n    homes {\n      currentSubscription
-        {\n        priceInfo {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
+        {\n        priceInfo(resolution: QUARTER_HOURLY) {\n          today {\n            total\n            startsAt\n            level\n          }\n          tomorrow
         {\n            total\n            startsAt\n            level\n          }\n        }\n      }\n    }\n  }\n}","operationName":"Tibber__PRICE_INFO_QUERY"}'
     headers:
       Accept-Encoding:
@@ -129,7 +201,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 23 Sep 2025 05:09:15 GMT
+      - Tue, 23 Sep 2025 05:10:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -143,15 +215,15 @@ http_interactions:
       Cache-Control:
       - no-store
       Etag:
-      - W/"81d-kJKt3KGxA87ccAxuAsKG6v+IGXE"
+      - W/"1f54-W7Q0XKfE3DsALApFyuAILQZLgVc"
       Vary:
       - Accept-Encoding
     body:
       encoding: UTF-8
-      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.1299,"startsAt":"2025-09-23T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.3395,"startsAt":"2025-09-23T01:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4594,"startsAt":"2025-09-23T22:00:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:00:00.000+02:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.1299,"startsAt":"2025-09-23T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1299,"startsAt":"2025-09-23T00:15:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1299,"startsAt":"2025-09-23T00:30:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1299,"startsAt":"2025-09-23T00:45:00.000+02:00","level":"VERY_CHEAP"},{"total":0.3395,"startsAt":"2025-09-23T01:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3395,"startsAt":"2025-09-23T01:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.3395,"startsAt":"2025-09-23T01:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.3395,"startsAt":"2025-09-23T01:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:15:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:30:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:45:00.000+02:00","level":"EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:15:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:30:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:45:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4594,"startsAt":"2025-09-23T22:00:00.000+02:00","level":"NORMAL"},{"total":0.4594,"startsAt":"2025-09-23T22:15:00.000+02:00","level":"NORMAL"},{"total":0.4594,"startsAt":"2025-09-23T22:30:00.000+02:00","level":"NORMAL"},{"total":0.4594,"startsAt":"2025-09-23T22:45:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:00:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:15:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:30:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:45:00.000+02:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
 
         '
-  recorded_at: Tue, 23 Sep 2025 05:09:15 GMT
+  recorded_at: Tue, 23 Sep 2025 05:10:40 GMT
 - request:
     method: post
     uri: http://<INFLUX_HOST>:8086/api/v2/write?bucket=<INFLUX_BUCKET>&org=<INFLUX_ORG>&precision=s
@@ -159,29 +231,101 @@ http_interactions:
       encoding: UTF-8
       string: |-
         my-tibber amount=0.1299,level="VERY_CHEAP" 1758578400
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758579300
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758580200
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758581100
         my-tibber amount=0.3395,level="EXPENSIVE" 1758582000
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758582900
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758583800
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758584700
         my-tibber amount=0.3398,level="EXPENSIVE" 1758585600
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758586500
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758587400
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758588300
         my-tibber amount=0.34,level="EXPENSIVE" 1758589200
+        my-tibber amount=0.34,level="EXPENSIVE" 1758590100
+        my-tibber amount=0.34,level="EXPENSIVE" 1758591000
+        my-tibber amount=0.34,level="EXPENSIVE" 1758591900
         my-tibber amount=0.3369,level="EXPENSIVE" 1758592800
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758593700
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758594600
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758595500
         my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758596400
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758597300
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758598200
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758599100
         my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758600000
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758600900
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758601800
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758602700
         my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758603600
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758604500
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758605400
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758606300
         my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758607200
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758608100
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758609000
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758609900
         my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758610800
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758611700
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758612600
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758613500
         my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758614400
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758615300
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758616200
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758617100
         my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758618000
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758618900
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758619800
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758620700
         my-tibber amount=0.4474,level="EXPENSIVE" 1758621600
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758622500
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758623400
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758624300
         my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758625200
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758626100
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758627000
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758627900
         my-tibber amount=0.4534,level="EXPENSIVE" 1758628800
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758629700
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758630600
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758631500
         my-tibber amount=0.4342,level="EXPENSIVE" 1758632400
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758633300
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758634200
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758635100
         my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758636000
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758636900
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758637800
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758638700
         my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758639600
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758640500
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758641400
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758642300
         my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758643200
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758644100
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758645000
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758645900
         my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758646800
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758647700
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758648600
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758649500
         my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758650400
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758651300
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758652200
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758653100
         my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758654000
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758654900
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758655800
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758656700
         my-tibber amount=0.4594,level="NORMAL" 1758657600
+        my-tibber amount=0.4594,level="NORMAL" 1758658500
+        my-tibber amount=0.4594,level="NORMAL" 1758659400
+        my-tibber amount=0.4594,level="NORMAL" 1758660300
         my-tibber amount=0.4454,level="NORMAL" 1758661200
+        my-tibber amount=0.4454,level="NORMAL" 1758662100
+        my-tibber amount=0.4454,level="NORMAL" 1758663000
+        my-tibber amount=0.4454,level="NORMAL" 1758663900
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -203,9 +347,9 @@ http_interactions:
       X-Influxdb-Version:
       - v2.7.12
       Date:
-      - Tue, 23 Sep 2025 05:09:15 GMT
+      - Tue, 23 Sep 2025 05:10:40 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Tue, 23 Sep 2025 05:09:15 GMT
+  recorded_at: Tue, 23 Sep 2025 05:10:40 GMT
 recorded_with: VCR 6.3.1
