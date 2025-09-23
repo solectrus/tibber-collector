@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 21 Aug 2024 06:04:13 GMT
+      - Tue, 23 Sep 2025 05:09:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -36,53 +36,55 @@ http_interactions:
       - Express
       Access-Control-Allow-Origin:
       - "*"
+      Cache-Control:
+      - no-store
       Etag:
-      - W/"7b4-T5YgOLjKXecjJXEdEP9iNbm9zNg"
+      - W/"81d-kJKt3KGxA87ccAxuAsKG6v+IGXE"
       Vary:
       - Accept-Encoding
     body:
-      encoding: ASCII-8BIT
-      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.0984,"startsAt":"2024-08-21T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0919,"startsAt":"2024-08-21T01:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0886,"startsAt":"2024-08-21T02:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0885,"startsAt":"2024-08-21T03:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0916,"startsAt":"2024-08-21T04:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1,"startsAt":"2024-08-21T05:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1317,"startsAt":"2024-08-21T06:00:00.000+02:00","level":"CHEAP"},{"total":0.1711,"startsAt":"2024-08-21T07:00:00.000+02:00","level":"CHEAP"},{"total":0.2187,"startsAt":"2024-08-21T08:00:00.000+02:00","level":"NORMAL"},{"total":0.2189,"startsAt":"2024-08-21T09:00:00.000+02:00","level":"NORMAL"},{"total":0.142,"startsAt":"2024-08-21T10:00:00.000+02:00","level":"CHEAP"},{"total":0.1264,"startsAt":"2024-08-21T11:00:00.000+02:00","level":"CHEAP"},{"total":0.1061,"startsAt":"2024-08-21T12:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1,"startsAt":"2024-08-21T13:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.099,"startsAt":"2024-08-21T14:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0999,"startsAt":"2024-08-21T15:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1199,"startsAt":"2024-08-21T16:00:00.000+02:00","level":"CHEAP"},{"total":0.1563,"startsAt":"2024-08-21T17:00:00.000+02:00","level":"CHEAP"},{"total":0.222,"startsAt":"2024-08-21T18:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.2052,"startsAt":"2024-08-21T19:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.1755,"startsAt":"2024-08-21T20:00:00.000+02:00","level":"NORMAL"},{"total":0.1628,"startsAt":"2024-08-21T21:00:00.000+02:00","level":"NORMAL"},{"total":0.156,"startsAt":"2024-08-21T22:00:00.000+02:00","level":"CHEAP"},{"total":0.1472,"startsAt":"2024-08-21T23:00:00.000+02:00","level":"CHEAP"}],"tomorrow":[]}}}]}}}
+      encoding: UTF-8
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.1299,"startsAt":"2025-09-23T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.3395,"startsAt":"2025-09-23T01:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4594,"startsAt":"2025-09-23T22:00:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:00:00.000+02:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
 
         '
-  recorded_at: Wed, 21 Aug 2024 06:04:13 GMT
+  recorded_at: Tue, 23 Sep 2025 05:09:14 GMT
 - request:
     method: post
     uri: http://<INFLUX_HOST>:8086/api/v2/write?bucket=<INFLUX_BUCKET>&org=<INFLUX_ORG>&precision=s
     body:
       encoding: UTF-8
       string: |-
-        my-tibber amount=0.0984,level="VERY_CHEAP" 1724191200
-        my-tibber amount=0.0919,level="VERY_CHEAP" 1724194800
-        my-tibber amount=0.0886,level="VERY_CHEAP" 1724198400
-        my-tibber amount=0.0885,level="VERY_CHEAP" 1724202000
-        my-tibber amount=0.0916,level="VERY_CHEAP" 1724205600
-        my-tibber amount=0.1,level="VERY_CHEAP" 1724209200
-        my-tibber amount=0.1317,level="CHEAP" 1724212800
-        my-tibber amount=0.1711,level="CHEAP" 1724216400
-        my-tibber amount=0.2187,level="NORMAL" 1724220000
-        my-tibber amount=0.2189,level="NORMAL" 1724223600
-        my-tibber amount=0.142,level="CHEAP" 1724227200
-        my-tibber amount=0.1264,level="CHEAP" 1724230800
-        my-tibber amount=0.1061,level="VERY_CHEAP" 1724234400
-        my-tibber amount=0.1,level="VERY_CHEAP" 1724238000
-        my-tibber amount=0.099,level="VERY_CHEAP" 1724241600
-        my-tibber amount=0.0999,level="VERY_CHEAP" 1724245200
-        my-tibber amount=0.1199,level="CHEAP" 1724248800
-        my-tibber amount=0.1563,level="CHEAP" 1724252400
-        my-tibber amount=0.222,level="EXPENSIVE" 1724256000
-        my-tibber amount=0.2052,level="EXPENSIVE" 1724259600
-        my-tibber amount=0.1755,level="NORMAL" 1724263200
-        my-tibber amount=0.1628,level="NORMAL" 1724266800
-        my-tibber amount=0.156,level="CHEAP" 1724270400
-        my-tibber amount=0.1472,level="CHEAP" 1724274000
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758578400
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758582000
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758585600
+        my-tibber amount=0.34,level="EXPENSIVE" 1758589200
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758592800
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758596400
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758600000
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758603600
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758607200
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758610800
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758614400
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758618000
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758621600
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758625200
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758628800
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758632400
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758636000
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758639600
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758643200
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758646800
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758650400
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758654000
+        my-tibber amount=0.4594,level="NORMAL" 1758657600
+        my-tibber amount=0.4454,level="NORMAL" 1758661200
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - influxdb-client-ruby/3.1.0
+      - influxdb-client-ruby/3.2.0
       Authorization:
       - Token <INFLUX_TOKEN>
       Content-Type:
@@ -95,13 +97,13 @@ http_interactions:
       X-Influxdb-Build:
       - OSS
       X-Influxdb-Version:
-      - v2.7.10
+      - v2.7.12
       Date:
-      - Wed, 21 Aug 2024 06:04:13 GMT
+      - Tue, 23 Sep 2025 05:09:14 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 21 Aug 2024 06:04:13 GMT
+  recorded_at: Tue, 23 Sep 2025 05:09:14 GMT
 - request:
     method: post
     uri: https://api.tibber.com/v1-beta/gql
@@ -127,7 +129,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 21 Aug 2024 06:04:14 GMT
+      - Tue, 23 Sep 2025 05:09:15 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -138,53 +140,55 @@ http_interactions:
       - Express
       Access-Control-Allow-Origin:
       - "*"
+      Cache-Control:
+      - no-store
       Etag:
-      - W/"7b4-T5YgOLjKXecjJXEdEP9iNbm9zNg"
+      - W/"81d-kJKt3KGxA87ccAxuAsKG6v+IGXE"
       Vary:
       - Accept-Encoding
     body:
-      encoding: ASCII-8BIT
-      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.0984,"startsAt":"2024-08-21T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0919,"startsAt":"2024-08-21T01:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0886,"startsAt":"2024-08-21T02:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0885,"startsAt":"2024-08-21T03:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0916,"startsAt":"2024-08-21T04:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1,"startsAt":"2024-08-21T05:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1317,"startsAt":"2024-08-21T06:00:00.000+02:00","level":"CHEAP"},{"total":0.1711,"startsAt":"2024-08-21T07:00:00.000+02:00","level":"CHEAP"},{"total":0.2187,"startsAt":"2024-08-21T08:00:00.000+02:00","level":"NORMAL"},{"total":0.2189,"startsAt":"2024-08-21T09:00:00.000+02:00","level":"NORMAL"},{"total":0.142,"startsAt":"2024-08-21T10:00:00.000+02:00","level":"CHEAP"},{"total":0.1264,"startsAt":"2024-08-21T11:00:00.000+02:00","level":"CHEAP"},{"total":0.1061,"startsAt":"2024-08-21T12:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1,"startsAt":"2024-08-21T13:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.099,"startsAt":"2024-08-21T14:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.0999,"startsAt":"2024-08-21T15:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.1199,"startsAt":"2024-08-21T16:00:00.000+02:00","level":"CHEAP"},{"total":0.1563,"startsAt":"2024-08-21T17:00:00.000+02:00","level":"CHEAP"},{"total":0.222,"startsAt":"2024-08-21T18:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.2052,"startsAt":"2024-08-21T19:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.1755,"startsAt":"2024-08-21T20:00:00.000+02:00","level":"NORMAL"},{"total":0.1628,"startsAt":"2024-08-21T21:00:00.000+02:00","level":"NORMAL"},{"total":0.156,"startsAt":"2024-08-21T22:00:00.000+02:00","level":"CHEAP"},{"total":0.1472,"startsAt":"2024-08-21T23:00:00.000+02:00","level":"CHEAP"}],"tomorrow":[]}}}]}}}
+      encoding: UTF-8
+      string: '{"data":{"viewer":{"homes":[{"currentSubscription":{"priceInfo":{"today":[{"total":0.1299,"startsAt":"2025-09-23T00:00:00.000+02:00","level":"VERY_CHEAP"},{"total":0.3395,"startsAt":"2025-09-23T01:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3398,"startsAt":"2025-09-23T02:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.34,"startsAt":"2025-09-23T03:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3369,"startsAt":"2025-09-23T04:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.3985,"startsAt":"2025-09-23T05:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.6656,"startsAt":"2025-09-23T06:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.0524,"startsAt":"2025-09-23T07:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1729,"startsAt":"2025-09-23T08:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7922,"startsAt":"2025-09-23T09:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4915,"startsAt":"2025-09-23T10:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4577,"startsAt":"2025-09-23T11:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4474,"startsAt":"2025-09-23T12:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4716,"startsAt":"2025-09-23T13:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4534,"startsAt":"2025-09-23T14:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.4342,"startsAt":"2025-09-23T15:00:00.000+02:00","level":"EXPENSIVE"},{"total":0.5099,"startsAt":"2025-09-23T16:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.1693,"startsAt":"2025-09-23T17:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.49,"startsAt":"2025-09-23T18:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.3726,"startsAt":"2025-09-23T19:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":1.4165,"startsAt":"2025-09-23T20:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.7765,"startsAt":"2025-09-23T21:00:00.000+02:00","level":"VERY_EXPENSIVE"},{"total":0.4594,"startsAt":"2025-09-23T22:00:00.000+02:00","level":"NORMAL"},{"total":0.4454,"startsAt":"2025-09-23T23:00:00.000+02:00","level":"NORMAL"}],"tomorrow":[]}}}]}}}
 
         '
-  recorded_at: Wed, 21 Aug 2024 06:04:14 GMT
+  recorded_at: Tue, 23 Sep 2025 05:09:15 GMT
 - request:
     method: post
     uri: http://<INFLUX_HOST>:8086/api/v2/write?bucket=<INFLUX_BUCKET>&org=<INFLUX_ORG>&precision=s
     body:
       encoding: UTF-8
       string: |-
-        my-tibber amount=0.0984,level="VERY_CHEAP" 1724191200
-        my-tibber amount=0.0919,level="VERY_CHEAP" 1724194800
-        my-tibber amount=0.0886,level="VERY_CHEAP" 1724198400
-        my-tibber amount=0.0885,level="VERY_CHEAP" 1724202000
-        my-tibber amount=0.0916,level="VERY_CHEAP" 1724205600
-        my-tibber amount=0.1,level="VERY_CHEAP" 1724209200
-        my-tibber amount=0.1317,level="CHEAP" 1724212800
-        my-tibber amount=0.1711,level="CHEAP" 1724216400
-        my-tibber amount=0.2187,level="NORMAL" 1724220000
-        my-tibber amount=0.2189,level="NORMAL" 1724223600
-        my-tibber amount=0.142,level="CHEAP" 1724227200
-        my-tibber amount=0.1264,level="CHEAP" 1724230800
-        my-tibber amount=0.1061,level="VERY_CHEAP" 1724234400
-        my-tibber amount=0.1,level="VERY_CHEAP" 1724238000
-        my-tibber amount=0.099,level="VERY_CHEAP" 1724241600
-        my-tibber amount=0.0999,level="VERY_CHEAP" 1724245200
-        my-tibber amount=0.1199,level="CHEAP" 1724248800
-        my-tibber amount=0.1563,level="CHEAP" 1724252400
-        my-tibber amount=0.222,level="EXPENSIVE" 1724256000
-        my-tibber amount=0.2052,level="EXPENSIVE" 1724259600
-        my-tibber amount=0.1755,level="NORMAL" 1724263200
-        my-tibber amount=0.1628,level="NORMAL" 1724266800
-        my-tibber amount=0.156,level="CHEAP" 1724270400
-        my-tibber amount=0.1472,level="CHEAP" 1724274000
+        my-tibber amount=0.1299,level="VERY_CHEAP" 1758578400
+        my-tibber amount=0.3395,level="EXPENSIVE" 1758582000
+        my-tibber amount=0.3398,level="EXPENSIVE" 1758585600
+        my-tibber amount=0.34,level="EXPENSIVE" 1758589200
+        my-tibber amount=0.3369,level="EXPENSIVE" 1758592800
+        my-tibber amount=0.3985,level="VERY_EXPENSIVE" 1758596400
+        my-tibber amount=0.6656,level="VERY_EXPENSIVE" 1758600000
+        my-tibber amount=1.0524,level="VERY_EXPENSIVE" 1758603600
+        my-tibber amount=1.1729,level="VERY_EXPENSIVE" 1758607200
+        my-tibber amount=0.7922,level="VERY_EXPENSIVE" 1758610800
+        my-tibber amount=0.4915,level="VERY_EXPENSIVE" 1758614400
+        my-tibber amount=0.4577,level="VERY_EXPENSIVE" 1758618000
+        my-tibber amount=0.4474,level="EXPENSIVE" 1758621600
+        my-tibber amount=0.4716,level="VERY_EXPENSIVE" 1758625200
+        my-tibber amount=0.4534,level="EXPENSIVE" 1758628800
+        my-tibber amount=0.4342,level="EXPENSIVE" 1758632400
+        my-tibber amount=0.5099,level="VERY_EXPENSIVE" 1758636000
+        my-tibber amount=1.1693,level="VERY_EXPENSIVE" 1758639600
+        my-tibber amount=1.49,level="VERY_EXPENSIVE" 1758643200
+        my-tibber amount=1.3726,level="VERY_EXPENSIVE" 1758646800
+        my-tibber amount=1.4165,level="VERY_EXPENSIVE" 1758650400
+        my-tibber amount=0.7765,level="VERY_EXPENSIVE" 1758654000
+        my-tibber amount=0.4594,level="NORMAL" 1758657600
+        my-tibber amount=0.4454,level="NORMAL" 1758661200
     headers:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
       User-Agent:
-      - influxdb-client-ruby/3.1.0
+      - influxdb-client-ruby/3.2.0
       Authorization:
       - Token <INFLUX_TOKEN>
       Content-Type:
@@ -197,11 +201,11 @@ http_interactions:
       X-Influxdb-Build:
       - OSS
       X-Influxdb-Version:
-      - v2.7.10
+      - v2.7.12
       Date:
-      - Wed, 21 Aug 2024 06:04:14 GMT
+      - Tue, 23 Sep 2025 05:09:15 GMT
     body:
       encoding: UTF-8
       string: ''
-  recorded_at: Wed, 21 Aug 2024 06:04:14 GMT
+  recorded_at: Tue, 23 Sep 2025 05:09:15 GMT
 recorded_with: VCR 6.3.1

@@ -1238,8 +1238,8 @@
                 "name": "SubscriptionPriceConnection",
                 "ofType": null
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "use `Subscription.priceInfoRange` instead"
             }
           ],
           "inputFields": null,
@@ -1617,6 +1617,58 @@
           "possibleTypes": null
         },
         {
+          "kind": "ENUM",
+          "name": "PriceInfoResolution",
+          "description": null,
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": [
+            {
+              "name": "HOURLY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "QUARTER_HOURLY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "possibleTypes": null
+        },
+        {
+          "kind": "ENUM",
+          "name": "PriceInfoRangeResolution",
+          "description": null,
+          "fields": null,
+          "inputFields": null,
+          "interfaces": null,
+          "enumValues": [
+            {
+              "name": "DAILY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "HOURLY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "QUARTER_HOURLY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            }
+          ],
+          "possibleTypes": null
+        },
+        {
           "kind": "OBJECT",
           "name": "Subscription",
           "description": null,
@@ -1703,8 +1755,19 @@
             },
             {
               "name": "priceInfo",
-              "description": "Price information related to the subscription",
-              "args": [],
+              "description": "Price information related to the subscription. For backward-compatible reasons, you have to set `resolution` to `QUARTER_HOURLY` to get quarter-hourly prices.",
+              "args": [
+                {
+                  "name": "resolution",
+                  "description": null,
+                  "type": {
+                    "kind": "ENUM",
+                    "name": "PriceInfoResolution",
+                    "ofType": null
+                  },
+                  "defaultValue": "HOURLY"
+                }
+              ],
               "type": {
                 "kind": "OBJECT",
                 "name": "PriceInfo",
@@ -1714,16 +1777,83 @@
               "deprecationReason": null
             },
             {
+              "name": "priceInfoRange",
+              "description": "Historical price information related to the subscription. Replaces `priceInfo.range`. Range of prices, optionally relative to `before`/`after` arguments. Capped at 672 items (7 days) for resolution QUARTER_HOURLY, 744 items (31 days) for resolution HOURLY, and 31 items for resolution DAILY. If you need to fetch a longer interval, perform multiple requests and take advantage of the `pageInfo` data. Do note that prices never change, so store already fetched historical prices locally; if you can use `today`/`tomorrow` instead, use that since the API can serve this data faster and in a more reliable way.",
+              "args": [
+                {
+                  "name": "resolution",
+                  "description": "Temporal resolution",
+                  "type": {
+                    "kind": "NON_NULL",
+                    "name": null,
+                    "ofType": {
+                      "kind": "ENUM",
+                      "name": "PriceInfoRangeResolution",
+                      "ofType": null
+                    }
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "first",
+                  "description": "Take the `n` first results from cursor. Cannot be used in conjunction with `last`. Limit count: 672 (QUARTER_HOURLY), 744 (HOURLY), 31 (DAILY).",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "last",
+                  "description": "Take the `n` last results from cursor. Cannot be used in conjunction with `first`. Limit count: 672 (QUARTER_HOURLY), 744 (HOURLY), 31 (DAILY).",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "before",
+                  "description": "Base64-encoded ISO8601 date/time cursor position. Cannot be used in conjunction with `after.` Has no influence when `first` is used.",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "after",
+                  "description": "Base64-encoded ISO8601 date/time cursor position. Cannot be used in conjunction with `before`. Has no influence when `last` is used.",
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "String",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                }
+              ],
+              "type": {
+                "kind": "OBJECT",
+                "name": "SubscriptionPriceConnection",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "priceRating",
-              "description": "Price information related to the subscription",
+              "description": "Alternative price information related to the subscription (deprecated)",
               "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "PriceRating",
                 "ofType": null
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "use `Subscription.priceInfo` instead"
             }
           ],
           "inputFields": null,
@@ -1826,7 +1956,7 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "use cost instead."
+              "deprecationReason": "use `cost` instead"
             },
             {
               "name": "unitCost",
@@ -1838,11 +1968,11 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "use cost instead"
+              "deprecationReason": "use `cost` instead"
             },
             {
               "name": "cost",
-              "description": null,
+              "description": "Consumption cost (consumption × unitPrice); including VAT (where applicable), excluding fees (where applicable), excluding production reward, excluding Grid Rewards",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -2387,13 +2517,25 @@
               "deprecationReason": null
             },
             {
-              "name": "ELECTRICITY",
+              "name": "AIR2WATER_HEATPUMP",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
-              "name": "GROUND",
+              "name": "BOILER",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "CENTRAL_HEATING",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "DISTRICT",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -2411,13 +2553,43 @@
               "deprecationReason": null
             },
             {
-              "name": "AIR2WATER_HEATPUMP",
+              "name": "ELECTRICITY",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "FLOOR",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "GAS",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "GROUND",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "OIL",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
             },
             {
               "name": "OTHER",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "WASTE",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -3046,7 +3218,7 @@
         {
           "kind": "INPUT_OBJECT",
           "name": "MeterReadingInput",
-          "description": null,
+          "description": "Deprecated; sending this in will do nothing",
           "fields": null,
           "inputFields": [
             {
@@ -3095,7 +3267,7 @@
         {
           "kind": "OBJECT",
           "name": "MeterReadingResponse",
-          "description": null,
+          "description": "Deprecated; will only return default values",
           "fields": [
             {
               "name": "homeId",
@@ -3110,8 +3282,8 @@
                   "ofType": null
                 }
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "do not use anymore"
             },
             {
               "name": "time",
@@ -3122,8 +3294,8 @@
                 "name": "String",
                 "ofType": null
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "always returns `null`"
             },
             {
               "name": "reading",
@@ -3138,8 +3310,8 @@
                   "ofType": null
                 }
               },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "isDeprecated": true,
+              "deprecationReason": "always returns `0`"
             }
           ],
           "inputFields": null,
@@ -3255,7 +3427,7 @@
         {
           "kind": "OBJECT",
           "name": "LiveMeasurement",
-          "description": null,
+          "description": "Real-time measurement data from Pulse or Watty device. For meter connected Pulses, the data update rate is governed by the meter, but may be throttled/batched by Tibber. Differences in meter hardware and/or firmware means that it is not guaranteed that all fields are present in every data frame and furthermore cannot be guaranteed to be fully correct or complete, given that Tibber relies on what the meter provides. Tibber does not normalize or modify the meter data other than to try to handle known meter/firmware bugs and idiosyncrasies. Meter data may be enriched with additional aggregated fields where possible.",
           "fields": [
             {
               "name": "timestamp",
@@ -3335,7 +3507,7 @@
             },
             {
               "name": "accumulatedConsumptionLastHour",
-              "description": "Energy consumed since since last hour shift in kilowatt-hours (kWh)",
+              "description": "Energy consumed since last hour shift in kilowatt-hours (kWh)",
               "args": [],
               "type": {
                 "kind": "NON_NULL",
@@ -3379,7 +3551,7 @@
             },
             {
               "name": "accumulatedReward",
-              "description": "Accumulated reward since midnight; requires active Tibber power deal",
+              "description": "Accumulated production reward since midnight; requires active Tibber power deal. Note that this is unrelated to Grid Rewards.",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3535,7 +3707,7 @@
             },
             {
               "name": "voltagePhase1",
-              "description": "Voltage on phase 1; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware.",
+              "description": "Voltage on phase 1; on some meters, the value is not part of every data frame, therefore the value can be `null` at certain intervals. It is not guaranteed that single phase installations will be reporting on Phase 1 since Tibber does not normalize this data and only reports what is received from the meter.",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3547,7 +3719,7 @@
             },
             {
               "name": "voltagePhase2",
-              "description": "Voltage on phase 2; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
+              "description": "Voltage on phase 2; on some meters, the value is not part of every data frame, therefore the value can be `null` at certain intervals. It is not guaranteed that single phase installations will be reporting on Phase 1 since Tibber does not normalize this data and only reports what is received from the meter.",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3559,7 +3731,43 @@
             },
             {
               "name": "voltagePhase3",
-              "description": "Voltage on phase 3; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
+              "description": "Voltage on phase 3; on some meters, the value is not part of every data frame, therefore the value can be `null` at certain intervals. It is not guaranteed that single phase installations will be reporting on Phase 1 since Tibber does not normalize this data and only reports what is received from the meter.",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "currentL1",
+              "description": "Current on L1; on some meters, the value is not part of every data frame, therefore the value can be `null` at certain intervals. It is not guaranteed that single phase installations will be reporting on Phase 1 since Tibber does not normalize this data and only reports what is received from the meter.",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "currentL2",
+              "description": "Current on L2; on some meters, the value is not part of every data frame, therefore the value can be `null` at certain intervals. It is not guaranteed that single phase installations will be reporting on Phase 1 since Tibber does not normalize this data and only reports what is received from the meter.",
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Float",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "currentL3",
+              "description": "Current on L3; on some meters, the value is not part of every data frame, therefore the value can be `null` at certain intervals. It is not guaranteed that single phase installations will be reporting on Phase 1 since Tibber does not normalize this data and only reports what is received from the meter.",
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3571,7 +3779,7 @@
             },
             {
               "name": "currentPhase1",
-              "description": "Current on phase 1; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware.",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3579,23 +3787,11 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "Replaced by currentL1."
-            },
-            {
-              "name": "currentL1",
-              "description": "Current on L1; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware.",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "deprecationReason": "superseded by `currentL1`"
             },
             {
               "name": "currentPhase2",
-              "description": "Current on phase 2; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3603,23 +3799,11 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "Replaced by currentL2."
-            },
-            {
-              "name": "currentL2",
-              "description": "Current on L2; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "deprecationReason": "superseded by `currentL2`"
             },
             {
               "name": "currentPhase3",
-              "description": "Current on phase 3; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
+              "description": null,
               "args": [],
               "type": {
                 "kind": "SCALAR",
@@ -3627,19 +3811,7 @@
                 "ofType": null
               },
               "isDeprecated": true,
-              "deprecationReason": "Replaced by currentL3."
-            },
-            {
-              "name": "currentL3",
-              "description": "Current on L3; on Kaifa and Aidon meters the value is not part of every HAN data frame therefore the value is null at timestamps with second value other than 0, 10, 20, 30, 40, 50. There can be other deviations based on concrete meter firmware. Value is always null for single phase meters.",
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "Float",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
+              "deprecationReason": "superseded by `currentL3`"
             },
             {
               "name": "signalStrength",
@@ -3825,7 +3997,7 @@
           "fields": [
             {
               "name": "sendMeterReading",
-              "description": "Send meter reading for home (only available for Norwegian users)",
+              "description": "Deprecated; calling this mutation will do nothing",
               "args": [
                 {
                   "name": "input",
@@ -3959,16 +4131,22 @@
               "description": "Subscribe to test stream",
               "args": [
                 {
-                  "name": "homeId",
+                  "name": "count",
                   "description": null,
                   "type": {
-                    "kind": "NON_NULL",
-                    "name": null,
-                    "ofType": {
-                      "kind": "SCALAR",
-                      "name": "ID",
-                      "ofType": null
-                    }
+                    "kind": "SCALAR",
+                    "name": "Int",
+                    "ofType": null
+                  },
+                  "defaultValue": null
+                },
+                {
+                  "name": "complete",
+                  "description": null,
+                  "type": {
+                    "kind": "SCALAR",
+                    "name": "Boolean",
+                    "ofType": null
                   },
                   "defaultValue": null
                 }

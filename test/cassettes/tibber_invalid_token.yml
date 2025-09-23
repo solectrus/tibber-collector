@@ -21,29 +21,31 @@ http_interactions:
       - Bearer invalid_token
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
       Date:
-      - Thu, 31 Oct 2024 08:16:35 GMT
+      - Tue, 23 Sep 2025 05:09:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '106'
+      - '147'
       Connection:
       - keep-alive
       X-Powered-By:
       - Express
       Access-Control-Allow-Origin:
       - "*"
+      Cache-Control:
+      - no-store
       Etag:
-      - W/"6a-D4EHp016fETduq58hl56Kzj7tn8"
+      - W/"93-nDNEBAQtFQVPj3rB6ZEpnKdncD4"
       Vary:
       - Accept-Encoding
     body:
       encoding: UTF-8
-      string: '{"errors":[{"message":"Context creation failed: invalid token","extensions":{"code":"UNAUTHENTICATED"}}]}
+      string: '{"errors":[{"message":"invalid token","locations":[{"line":2,"column":3}],"path":["viewer"],"extensions":{"code":"UNAUTHENTICATED"}}],"data":null}
 
         '
-  recorded_at: Thu, 31 Oct 2024 08:16:35 GMT
+  recorded_at: Tue, 23 Sep 2025 05:09:14 GMT
 recorded_with: VCR 6.3.1
