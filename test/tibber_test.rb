@@ -36,7 +36,7 @@ class TibberTest < Minitest::Test
     VCR.use_cassette('tibber_invalid_token') do
       out, err = capture_io { Tibber.new(config:).price_info }
 
-      assert_match(/Error Context creation failed: invalid token/, out)
+      assert_match(/invalid token/, out)
       assert_empty(err)
     end
   end

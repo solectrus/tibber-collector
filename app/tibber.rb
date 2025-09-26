@@ -59,7 +59,7 @@ class Tibber
       viewer {
         homes {
           currentSubscription{
-            priceInfo{
+            priceInfo(resolution: QUARTER_HOURLY) {
               today {
                 total
                 startsAt

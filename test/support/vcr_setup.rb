@@ -19,5 +19,11 @@ VCR.configure do |config|
   config.default_cassette_options = {
     record: record_mode,
     allow_playback_repeats: true,
+    decode_compressed_response: true,
+    serialize_with: :yaml,
   }
+
+  config.before_record do |interaction|
+    interaction.response.body.force_encoding('UTF-8')
+  end
 end
