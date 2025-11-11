@@ -1,5 +1,10 @@
-FROM ruby:3.4.6-alpine AS builder
+FROM ruby:3.4.7-alpine AS builder
 RUN apk add --no-cache build-base
+
+# Required for installing gem "openssl" on Alpine Linux
+# Remove this after upgrading to Ruby 3.4.8
+RUN apk add --no-cache openssl-dev
+####
 
 WORKDIR /tibber-collector
 COPY Gemfile* /tibber-collector/
@@ -8,11 +13,17 @@ RUN bundle config --local frozen 1 && \
     bundle install -j4 --retry 3 && \
     bundle clean --force
 
-FROM ruby:3.4.6-alpine
+FROM ruby:3.4.7-alpine
 LABEL maintainer="georg@ledermann.dev"
 
 # Add tzdata to get correct timezone
 RUN apk add --no-cache tzdata
+
+# Required for using gem "openssl" on Alpine Linux
+# Remove this after upgrading to Ruby 3.4.8
+RUN apk add --no-cache openssl ca-certificates && \
+    update-ca-certificates
+####
 
 # Decrease memory usage
 ENV MALLOC_ARENA_MAX=2

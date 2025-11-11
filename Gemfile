@@ -15,6 +15,9 @@ gem 'influxdb-client'
 # CSV Reading and Writing (https://github.com/ruby/csv)
 gem 'csv'
 
+# SSL/TLS and general-purpose cryptography for Ruby (https://github.com/ruby/openssl)
+gem 'openssl'
+
 group :development, :test do
   # Rake is a Make-like program implemented in Ruby (https://github.com/ruby/rake)
   gem 'rake'
@@ -37,7 +40,7 @@ group :development, :test do
   # Automatic Minitest code style checking tool.
   gem 'rubocop-minitest'
 
-  # Automatic performance checking tool for Ruby code. (https://github.com/DmitryTsepelev/rubocop-graphql)
+  # A collection of RuboCop cops to improve GraphQL-related code (https://github.com/DmitryTsepelev/rubocop-graphql)
   gem 'rubocop-graphql'
 
   # Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests. (https://benoittgt.github.io/vcr)
