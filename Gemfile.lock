@@ -49,7 +49,6 @@ GEM
     minitest (5.27.0)
     minitest-silence (0.2.4)
       minitest (~> 5.12)
-    openssl (4.0.0)
     parallel (1.27.0)
     parser (3.3.10.0)
       ast (~> 2.4.1)
@@ -121,7 +120,6 @@ DEPENDENCIES
   influxdb-client
   minitest
   minitest-silence
-  openssl
   rake
   rubocop
   rubocop-graphql
@@ -133,4 +131,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-  4.0.2
+  4.0.3
