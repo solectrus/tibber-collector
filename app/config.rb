@@ -11,9 +11,8 @@ Config =
     :influx_org,
     :influx_bucket,
     :influx_measurement,
-    keyword_init: true,
   ) do
-    def initialize(*options)
+    def initialize(**)
       super
 
       validate_url!(influx_url)
@@ -39,11 +38,11 @@ Config =
       throw "URL is invalid: #{url}"
     end
 
-    def self.from_env(options = {})
+    def self.from_env(**)
       new(
-        {}.merge(tibber_settings_from_env)
-          .merge(influx_credentials_from_env)
-          .merge(options),
+        **tibber_settings_from_env,
+        **influx_credentials_from_env,
+        **,
       )
     end
 

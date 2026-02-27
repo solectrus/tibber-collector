@@ -13,35 +13,35 @@ class ConfigTest < Minitest::Test
   }.freeze
 
   def test_valid_options
-    Config.new(VALID_OPTIONS)
+    Config.new(**VALID_OPTIONS)
   end
 
   def test_invalid_options
-    assert_raises(Exception) { Config.new({}) }
+    assert_raises(Exception) { Config.new(**{}) }
 
     error =
       assert_raises(Exception) do
-        Config.new(VALID_OPTIONS.merge(tibber_interval: 0))
+        Config.new(**VALID_OPTIONS, tibber_interval: 0)
       end
 
     assert_match(/Interval is invalid/, error.message)
 
     error =
       assert_raises(Exception) do
-        Config.new(VALID_OPTIONS.merge(influx_schema: 'foo'))
+        Config.new(**VALID_OPTIONS, influx_schema: 'foo')
       end
 
     assert_match(/URL is invalid/, error.message)
   end
 
   def test_tibber_methods
-    config = Config.new(VALID_OPTIONS)
+    config = Config.new(**VALID_OPTIONS)
 
     assert_equal 900, config.tibber_interval
   end
 
   def test_influx_methods
-    config = Config.new(VALID_OPTIONS)
+    config = Config.new(**VALID_OPTIONS)
 
     assert_equal 'influx.example.com', config.influx_host
     assert_equal 'https', config.influx_schema
