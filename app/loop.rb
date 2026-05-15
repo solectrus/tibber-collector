@@ -21,7 +21,7 @@ class Loop
     loop do
       self.count += 1
 
-      puts "##{self.count} - #{Time.now}"
+      puts "##{count} - #{Time.now}"
 
       push_to_influx(pull_from_tibber)
       break if max_count && count >= max_count
