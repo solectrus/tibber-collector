@@ -3,12 +3,13 @@
 require 'dotenv/load'
 require_relative 'loop'
 require_relative 'config'
+require_relative 'app_version'
 
 # Flush output immediately
 $stdout.sync = true
 
 puts 'Tibber collector for SOLECTRUS, ' \
-       "Version #{ENV.fetch('VERSION', '<unknown>')}, " \
+       "Version #{AppVersion.current || '<unknown>'}, " \
        "built at #{ENV.fetch('BUILDTIME', '<unknown>')}"
 puts 'https://github.com/solectrus/tibber-collector'
 puts 'Copyright (c) 2023-2026 Georg Ledermann, released under the MIT License'

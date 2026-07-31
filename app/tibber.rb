@@ -1,5 +1,6 @@
 require 'dotenv/load'
 require 'active_support/core_ext/kernel/reporting'
+require_relative 'app_version'
 
 # Suppress warning about circular dependency in gem "graphql-client"
 # https://github.com/github/graphql-client/pull/304
@@ -35,6 +36,10 @@ class Tibber
   BASE_URL = 'https://api.tibber.com/v1-beta/gql'.freeze
   SCHEMA_FILENAME = 'schema.json'.freeze
 
+  def self.user_agent
+    ['SOLECTRUS/Tibber-Collector', AppVersion.current].compact.join('/')
+  end
+
   HTTP =
     GraphQL::Client::HTTP.new(BASE_URL) do
       def headers(context)
@@ -42,7 +47,7 @@ class Tibber
 
         {
           'Authorization' => "Bearer #{context[:config].tibber_token}",
-          'User-Agent' => 'SOLECTRUS/Tibber-Collector',
+          'User-Agent' => Tibber.user_agent,
         }
       end
     end
